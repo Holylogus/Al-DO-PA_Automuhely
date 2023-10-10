@@ -1,0 +1,31 @@
+.menuElem {
+  color: white;
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 700;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:nth-child(6) {
+  position: fixed;
+  right: 70px;
+}
+
+nav ul {
+  margin-left: 40px;
+  padding-top: 42px;
+}
+
+.logo {
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 70px;
+}
