@@ -1,6 +1,5 @@
 header {
-  background-image: url("bg.jpg");
-
+  background-image: url("./bg.css");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
