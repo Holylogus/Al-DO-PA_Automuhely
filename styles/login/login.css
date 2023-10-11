@@ -64,7 +64,7 @@ input {
 }
 
 input:focus {
-    border: 2px solid #6f3bca;
+    border: 3px solid #2284a4;
 }
 
 label {

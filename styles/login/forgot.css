@@ -31,7 +31,7 @@ form {
   font-size: 1em;
 }
 
-input:not(#request) {
+input {
   text-align: center;
   border-radius: 1em;
   width: 70%;
@@ -48,8 +48,8 @@ input:not(#request) {
   height: 3em;
 }
 
-input:focus {
-  border: 2px solid #6f3bca;
+input#email:focus {
+  border: 3px solid #2284a4;
 }
 
 label {
@@ -110,10 +110,3 @@ i {
   position: relative;
   left: 77%;
 }
-
-/* .text {
-  height: 30px;
-  position: relative;
-  text-align: center;
-  transform: translateY(-50%);
-} */
