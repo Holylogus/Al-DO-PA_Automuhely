@@ -1,12 +1,11 @@
-header {
-  background-image: url("../imgs/h2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  height: 100vh;
+.w-100{
   width: 100vw;
-  position: absolute;
-  overflow:hidden;
+  height: 110vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+ bottom: 10vh;
 }
 
 .menuSzoveg {
