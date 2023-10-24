@@ -1,5 +1,4 @@
 A google bejelentkezéshez:
-          
           <div
                 id="g_id_onload"
                 data-client_id="645773626815-q230arbf77kmr6eedlnonmler8kiaqc8.apps.googleusercontent.com"
