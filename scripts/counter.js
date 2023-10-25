@@ -28,4 +28,6 @@ $(function () {
   function updateTimer() {
     $("#timer").html(count + "s");
   }
+
+  
 });
