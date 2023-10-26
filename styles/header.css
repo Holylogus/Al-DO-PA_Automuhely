@@ -1,11 +1,5 @@
-.w-100 {
-  width: 100vw;
-  height: 110vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
-  bottom: 10vh;
+header {
+  height: 100vh;
 }
 
 
