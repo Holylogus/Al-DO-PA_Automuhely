@@ -1,15 +1,17 @@
-.container-fluid {
-  padding-top: 40px;
-  background-color: rgba(54, 54, 54, 0.438);
-  position: absolute;
-  z-index: 1;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  z-index: 1;
+  margin-right: 0;
+}
+
+.container-fluid {
+  padding-top: 40px;
+  background-color: rgba(54, 54, 54, 0.438);
+  position: absolute;
+  z-index: 1;
 }
 
 .navbar-nav {
@@ -32,8 +34,10 @@
   color: white;
 }
 
-.nav-item:hover .nav-link {
-  border-radius: 5px;
+nav ul li:last-child {
+  .nav-item:hover .nav-link {
+    border-radius: 5px;
+  }
 }
 
 .nav-item:hover {
