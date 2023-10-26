@@ -1,8 +1,6 @@
 $("#submit").on("click", function (event) {
   event.preventDefault();
 });
-    event.preventDefault();
-})
 
 $(document).ready(function () {
     $(".menuElem").mouseenter(function () {
