@@ -1,5 +1,5 @@
-header {
-  background-image: url("../imgs/h2.jpg");
+body {
+  background-image: url("../imgs/header/1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -8,7 +8,7 @@ header {
 }
 
 main {
-  margin: auto;
+  margin: 200px auto;
   width: 60%;
 }
 
