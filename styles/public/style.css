@@ -19,14 +19,14 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
   text-align: center; 
   color: #333; 
-  font-size: 16px; 
+  font-size: 14px; 
   font-family: Arial, sans-serif; 
 }
 
 .szolgaltatasok img{
   float: left;
-  width: 250px;
-  height: 200px;
+  width: 20em;
+  height: 15em;
   padding: 10px;
 }
 
@@ -58,4 +58,8 @@ body {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
+}
+
+footer{
+  text-align: center;
 }
