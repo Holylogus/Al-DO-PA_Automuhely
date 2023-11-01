@@ -284,31 +284,43 @@ ul.inbox-pagination li {
   margin-right: 5px;
   margin-top: 7px;
 }
-.fileinput-button {
-  background: none repeat scroll 0 0 #eeeeee;
-  border: 1px solid #e6e6e6;
+
+.close{
+  padding: .3em .7em;
+  background-color: #2cbd08;
+  color: white;
+}
+.close:hover{
+  font-weight: bolder;
+  background-color: black;
+}
+.modal-body, .modal-header{
+  background-color: #030303cc;
+
 }
 .inbox-body .modal .modal-body input,
 .inbox-body .modal .modal-body textarea {
   border: 1px solid #e6e6e6;
   box-shadow: none;
 }
-/* küldés gomb hover */
-.btn-send,
-.btn-send:hover {
-  background: none repeat scroll 0 0 #e914bb;
+/* küldés gomb */
+.btn-send, .fileinput-button{
+  margin-top: 1em;
+  background: none repeat scroll 0 0 #2cbd08;
   color: #fff;
 }
-.btn-send:hover {
-  background: none repeat scroll 0 0 #2cbd08;
+.btn-send:hover, .fileinput-button:hover {
+  background: none repeat scroll 0 0 #030303;
 }
 .modal-header h4.modal-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+
 }
 .modal-body label {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+
 }
 .heading-inbox h4 {
   border-bottom: 1px solid #ddd;
