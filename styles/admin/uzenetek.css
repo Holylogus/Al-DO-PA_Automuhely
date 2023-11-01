@@ -1,6 +1,5 @@
-main {
-  margin-top: 2%;
-  width: 80vw;
+table {
+  --bs-table-hover-bg: none !important;
 }
 .mail-box {
   border-collapse: collapse;
@@ -8,9 +7,6 @@ main {
   display: table;
   table-layout: fixed;
   width: 100%;
-}
-.table {
-  --bs-table-hover-bg: #79f1af94;
 }
 .mail-box aside {
   display: table-cell;
@@ -20,19 +16,19 @@ main {
   vertical-align: top;
 }
 .mail-box .sm-side {
-  background: none repeat scroll 0 0 #e5e8ef;
+  background: none repeat scroll 0 0 #00000073;
   border-radius: 4px 0 0 4px;
   width: 25%;
 }
 .mail-box .lg-side {
-  background: none repeat scroll 0 0 #fff;
+  background: none repeat scroll 0 0 #00000073;
   border-radius: 0 4px 4px 0;
   width: 75%;
 }
 .mail-box .sm-side .user-head {
-  background: none repeat scroll 0 0 #00000088;
+  background: none repeat scroll 0 0 #00000062;
   border-radius: 4px 0 0;
-  color: #fff;
+  color: #000000;
   min-height: 80px;
   padding: 10px;
 }
@@ -40,28 +36,31 @@ main {
   float: left;
   width: 65px;
 }
-
+.user-head .inbox-avatar img {
+  border-radius: 4px;
+}
 .user-head .user-name {
   display: inline-block;
   margin: 0 0 0 10px;
 }
 .user-head .user-name h5 {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 15px;
 }
 .user-head .user-name h5 a {
-  color: #fff;
+  color: #ffffff;
+  font-size: 1.2em;
   text-decoration: none;
 }
 .user-head .user-name span a {
-  color: #5ff8ab;
-  font-size: 0.9em;
+  color: #00ff4c;
+  font-size: 1em;
   text-decoration: none;
 }
 a.mail-dropdown {
-  background: none repeat scroll 0 0 #000000a4;
+  background: none repeat scroll 0 0 #b36e6e;
   border-radius: 2px;
   color: #01a7b3;
   font-size: 10px;
@@ -72,15 +71,16 @@ a.mail-dropdown {
   padding: 20px;
 }
 .btn-compose {
-  background: none repeat scroll 0 0 #14b464;
-  color: #fff;
+  background: none repeat scroll 0 0 #32c74bb9;
+  color: #ffffff;
   padding: 12px 0;
   text-align: center;
   width: 100%;
 }
+/* üzenet írás hover */
 .btn-compose:hover {
-  background: none repeat scroll 0 0 #0f683c;
-  color: #fff;
+  background: none repeat scroll 0 0 #ffffff;
+  color: #000000;
 }
 ul.inbox-nav {
   display: inline-block;
@@ -89,7 +89,7 @@ ul.inbox-nav {
   width: 100%;
 }
 .inbox-divider {
-  border-bottom: 1px solid #d5d8df;
+  border-bottom: 1px solid #000000b4;
 }
 ul.inbox-nav li {
   display: inline-block;
@@ -97,20 +97,22 @@ ul.inbox-nav li {
   width: 100%;
 }
 ul.inbox-nav li a {
-  color: #6a6a6a;
+  color: rgb(255, 255, 255);
   display: inline-block;
   line-height: 45px;
   padding: 0 20px;
-  width: 100%;
+  width: 110%;
+  text-decoration: none;
 }
 ul.inbox-nav li a:hover,
 ul.inbox-nav li.active a,
 ul.inbox-nav li a:focus {
-  background: none repeat scroll 0 0 #d5ded8;
-  color: #6a6a6a;
+  /*  AKTÍV */
+  background: none repeat scroll 0 0 #0000009d;
+  color: white;
 }
 ul.inbox-nav li a i {
-  color: #6a6a6a;
+  color: #ffffff;
   font-size: 16px;
   padding-right: 10px;
 }
@@ -118,7 +120,7 @@ ul.inbox-nav li a span.label {
   margin-top: 13px;
 }
 ul.labels-info li h4 {
-  color: #5c5c5e;
+  color: #ff0808;
   font-size: 13px;
   padding-left: 15px;
   padding-right: 15px;
@@ -130,12 +132,12 @@ ul.labels-info li {
 }
 ul.labels-info li a {
   border-radius: 0;
-  color: #6a6a6a;
+  color: #d30a0a;
 }
 ul.labels-info li a:hover,
 ul.labels-info li a:focus {
-  background: none repeat scroll 0 0 #d5d7de;
-  color: #6a6a6a;
+  background: none repeat scroll 0 0 #c01610;
+  color: #ec1a1a;
 }
 ul.labels-info li a i {
   padding-right: 10px;
@@ -147,7 +149,7 @@ ul.labels-info li a i {
   padding: 0 22px;
 }
 .inbox-head {
-  background: none repeat scroll 0 0 #00000071;
+  background: none repeat scroll 0 0 #515251b0;
   border-radius: 0 4px 0 0;
   color: #fff;
   min-height: 80px;
@@ -169,16 +171,20 @@ ul.labels-info li a i {
   padding: 0 10px;
 }
 .inbox-head .sr-btn {
-  background: none repeat scroll 0 0 #00000071;
+  background: none repeat scroll 0 0 #4141418a;
   border: medium none;
   border-radius: 0 4px 4px 0;
   color: #fff;
   height: 40px;
   padding: 0 20px;
 }
+.inbox-head .sr-btn:hover {
+  background-color: white;
+  color: black;
+}
 .table-inbox {
-  border: 1px solid #d3d3d3;
-  margin-bottom: 0;
+  border: 2px solid #4b4b4b;
+  margin: 0px;
 }
 .table-inbox tr td {
   padding: 12px !important;
@@ -186,18 +192,36 @@ ul.labels-info li a i {
 .table-inbox tr td:hover {
   cursor: pointer;
 }
+
+.table-inbox tr:hover {
+  border: 2px rgb(255, 255, 255) solid;
+  margin: 0;
+}
+
 .table-inbox tr td .fa-star.inbox-started,
 .table-inbox tr td .fa-star:hover {
-  color: #e49b42;
+  color: #f78a09;
 }
 .table-inbox tr td .fa-star {
   color: #d5d5d5;
 }
+/* tartok */
 .table-inbox tr.unread td {
-  background: none repeat scroll 0 0 #f7f7f7;
+  background: none repeat scroll 0 0 #4b4b4bdc;
   font-weight: 600;
+  color: white;
 }
-
+.unread a {
+  text-decoration: none;
+  color: white;
+}
+.read .fa,
+.read .view-message,
+.read td {
+  color: white !important;
+  background-color: #000000b7;
+  font-weight: 300;
+}
 ul.inbox-pagination {
   float: right;
 }
@@ -210,25 +234,37 @@ ul.inbox-pagination li {
   width: 100%;
 }
 .mail-option .chk-all,
-.mail-option .btn-group {
+.mail-option .btn-group a.btn:not(.chk) {
   margin-right: 5px;
+  display: inline-block;
 }
-.mail-option .chk-all,
-.mail-option .btn-group a.btn {
-  background: none repeat scroll 0 0 #fcfcfc;
-  border: 1px solid #e7e7e7;
+.mail-option .btn-group a.btn:not(.chk-all) {
+  margin-right: 5px;
+  background: none repeat scroll 0 0 #00000085;
+  border: 1px solid #000000;
   border-radius: 3px !important;
-  color: #afafaf;
+  color: #ffffff;
   display: inline-block;
   padding: 5px 10px;
 }
+.mail-option .btn-group a.btn:hover {
+  color: black;
+  background-color: white;
+}
+.mail-option .btn-group {
+  background: initial;
+}
 .inbox-pagination a.np-btn {
-  background: none repeat scroll 0 0 #fcfcfc;
-  border: 1px solid #e7e7e7;
+  background: none repeat scroll 0 0 #32c74bb9;
+  border: 1px solid #32c74bb9;
   border-radius: 3px !important;
-  color: #afafaf;
+  color: #ffffff;
   display: inline-block;
   padding: 5px 15px;
+}
+.inbox-pagination a.np-btn:hover {
+  background-color: white;
+  color: black;
 }
 .mail-option .chk-all input[type="checkbox"] {
   margin-top: 0;
@@ -254,13 +290,14 @@ ul.inbox-pagination li {
   border: 1px solid #e6e6e6;
   box-shadow: none;
 }
+/* küldés gomb hover */
 .btn-send,
 .btn-send:hover {
-  background: none repeat scroll 0 0 #000000c2;
+  background: none repeat scroll 0 0 #e914bb;
   color: #fff;
 }
 .btn-send:hover {
-  background: none repeat scroll 0 0 #000000a4;
+  background: none repeat scroll 0 0 #2cbd08;
 }
 .modal-header h4.modal-title {
   font-family: "Open Sans", sans-serif;
