@@ -1,3 +1,7 @@
+main{
+  width: auto;
+  margin: 1.5em;
+}
 table {
   --bs-table-hover-bg: none !important;
 }
@@ -205,7 +209,6 @@ ul.labels-info li a i {
 .table-inbox tr td .fa-star {
   color: #d5d5d5;
 }
-/* tartok */
 .table-inbox tr.unread td {
   background: none repeat scroll 0 0 #4b4b4bdc;
   font-weight: 600;
