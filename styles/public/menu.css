@@ -30,10 +30,8 @@
   color: white;
 }
 
-nav ul li:last-child {
-  .nav-item:hover .nav-link {
-    border-radius: 5px;
-  }
+.nav-item:hover .nav-link {
+  border-radius: 5px;
 }
 
 .nav-item:hover {
