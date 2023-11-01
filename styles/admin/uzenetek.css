@@ -1,7 +1,6 @@
-
-main{
-    margin-top: 2%;
-    width: 80vw;
+main {
+  margin-top: 2%;
+  width: 80vw;
 }
 .mail-box {
   border-collapse: collapse;
@@ -9,6 +8,9 @@ main{
   display: table;
   table-layout: fixed;
   width: 100%;
+}
+.table {
+  --bs-table-hover-bg: #79f1af94;
 }
 .mail-box aside {
   display: table-cell;
@@ -28,7 +30,7 @@ main{
   width: 75%;
 }
 .mail-box .sm-side .user-head {
-  background: none repeat scroll 0 0 #00a8b3;
+  background: none repeat scroll 0 0 #00000088;
   border-radius: 4px 0 0;
   color: #fff;
   min-height: 80px;
@@ -44,20 +46,22 @@ main{
   margin: 0 0 0 10px;
 }
 .user-head .user-name h5 {
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 15px;
 }
 .user-head .user-name h5 a {
   color: #fff;
+  text-decoration: none;
 }
 .user-head .user-name span a {
-  color: #87e2e7;
-  font-size: 12px;
+  color: #5ff8ab;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 a.mail-dropdown {
-  background: none repeat scroll 0 0 #80d3d9;
+  background: none repeat scroll 0 0 #000000a4;
   border-radius: 2px;
   color: #01a7b3;
   font-size: 10px;
@@ -68,14 +72,14 @@ a.mail-dropdown {
   padding: 20px;
 }
 .btn-compose {
-  background: none repeat scroll 0 0 #ff6c60;
+  background: none repeat scroll 0 0 #14b464;
   color: #fff;
   padding: 12px 0;
   text-align: center;
   width: 100%;
 }
 .btn-compose:hover {
-  background: none repeat scroll 0 0 #f5675c;
+  background: none repeat scroll 0 0 #0f683c;
   color: #fff;
 }
 ul.inbox-nav {
@@ -102,7 +106,7 @@ ul.inbox-nav li a {
 ul.inbox-nav li a:hover,
 ul.inbox-nav li.active a,
 ul.inbox-nav li a:focus {
-  background: none repeat scroll 0 0 #d5d7de;
+  background: none repeat scroll 0 0 #d5ded8;
   color: #6a6a6a;
 }
 ul.inbox-nav li a i {
@@ -143,7 +147,7 @@ ul.labels-info li a i {
   padding: 0 22px;
 }
 .inbox-head {
-  background: none repeat scroll 0 0 #41cac0;
+  background: none repeat scroll 0 0 #00000071;
   border-radius: 0 4px 0 0;
   color: #fff;
   min-height: 80px;
@@ -165,7 +169,7 @@ ul.labels-info li a i {
   padding: 0 10px;
 }
 .inbox-head .sr-btn {
-  background: none repeat scroll 0 0 #00a6b2;
+  background: none repeat scroll 0 0 #00000071;
   border: medium none;
   border-radius: 0 4px 4px 0;
   color: #fff;
@@ -184,7 +188,7 @@ ul.labels-info li a i {
 }
 .table-inbox tr td .fa-star.inbox-started,
 .table-inbox tr td .fa-star:hover {
-  color: #f78a09;
+  color: #e49b42;
 }
 .table-inbox tr td .fa-star {
   color: #d5d5d5;
@@ -193,6 +197,7 @@ ul.labels-info li a i {
   background: none repeat scroll 0 0 #f7f7f7;
   font-weight: 600;
 }
+
 ul.inbox-pagination {
   float: right;
 }
@@ -251,11 +256,11 @@ ul.inbox-pagination li {
 }
 .btn-send,
 .btn-send:hover {
-  background: none repeat scroll 0 0 #00a8b3;
+  background: none repeat scroll 0 0 #000000c2;
   color: #fff;
 }
 .btn-send:hover {
-  background: none repeat scroll 0 0 #009da7;
+  background: none repeat scroll 0 0 #000000a4;
 }
 .modal-header h4.modal-title {
   font-family: "Open Sans", sans-serif;
