@@ -1,5 +1,6 @@
 @import url(./szamla.css);
 @import url(./fooldal.css);
+@import url(./uzenetek.css);
 
 body {
     background-image: url("../../imgs/header/3.jpeg");
