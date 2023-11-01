@@ -1,24 +1,19 @@
-.navbar {
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
   z-index: 1;
   margin-right: 0;
-}
+  background-color: rgba(0, 0, 0, 0.575);
 
-.container-fluid {
-  padding-top: 40px;
-  background-color: rgba(54, 54, 54, 0.671);
-  position: absolute;
-  z-index: 1;
 }
 
 .navbar-nav {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
 }
 
 .nav-item {
@@ -28,6 +23,7 @@
   font-weight: 400;
   border-radius: 5px;
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -40,13 +36,9 @@ nav ul li:last-child {
   }
 }
 
-#akcio{
-  font-weight: 1000;
-  color: red;
-}
-
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.582);
+
 }
 
 .navbar-brand {
@@ -61,4 +53,4 @@ nav ul li:last-child {
   color: white;
   position: absolute;
   right: 40px;
-}
+} 
