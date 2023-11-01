@@ -303,6 +303,7 @@ ul.inbox-pagination li {
   border: 1px solid #e6e6e6;
   box-shadow: none;
 }
+
 /* küldés gomb */
 .btn-send, .fileinput-button{
   margin-top: 1em;
@@ -375,7 +376,7 @@ ul.inbox-pagination li {
 
 .fileinput-button {
   float: left;
-  margin-right: 4px;
+  margin-right: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -431,4 +432,9 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+
+.form-group{
+  width: 90%;
+  margin: auto;
 }
