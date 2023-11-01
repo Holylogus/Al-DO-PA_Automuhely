@@ -49,7 +49,7 @@ table {
   margin: 0 0 0 10px;
 }
 .user-head .user-name h5 {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 15px;
@@ -211,11 +211,12 @@ ul.labels-info li a i {
 
 .table-inbox tr td .fa-star.inbox-started,
 .table-inbox tr td .fa-star:hover {
-  color: #e49b42;
+  color: #f78a09;
 }
 .table-inbox tr td .fa-star {
   color: #d5d5d5;
 }
+/* tartok */
 .table-inbox tr.unread td {
   background: none repeat scroll 0 0 #4b4b4bdc;
   font-weight: 600;
