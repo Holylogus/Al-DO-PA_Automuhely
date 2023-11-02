@@ -1,0 +1,25 @@
+{
+    "LISTA": [
+        {
+            "subject": "Az email tárgya 1",
+            "from": "felado1@example.com",
+            "to": "cimzett1@example.com",
+            "date": "2023-11-02T10:30:00",
+            "body": "Az email szövege itt található 1."
+        },
+        {
+            "subject": "Az email tárgya 2",
+            "from": "felado2@example.com",
+            "to": "cimzett2@example.com",
+            "date": "2023-11-02T11:30:00",
+            "body": "Az email szövege itt található 2."
+        },
+        {
+            "subject": "Az email tárgya 3",
+            "from": "felado3@example.com",
+            "to": "cimzett3@example.com",
+            "date": "2023-11-02T12:30:00",
+            "body": "Az email szövege itt található 3."
+        }
+    ]
+}
