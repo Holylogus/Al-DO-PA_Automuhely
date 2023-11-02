@@ -485,3 +485,7 @@ ul {
 .fade {
   background-color: transparent;
 }
+
+.csatoltFajlok .torolGomb{
+  cursor: pointer;
+}
