@@ -201,7 +201,7 @@ ul.labels-info li a i {
 }
 
 .table-inbox tr:hover {
-  border: 2px rgb(255, 255, 255) solid;
+  background: none repeat scroll 0 0 #4b4b4bdc;
   margin: 0;
 }
 
@@ -221,10 +221,10 @@ ul.labels-info li a i {
   text-decoration: none;
   color: white;
 }
-.read .fa,
+.read,
 .read .view-message,
 .read td {
-  color: white !important;
+  color: rgb(168, 167, 167) !important;
   background-color: #000000b7;
   font-weight: 300;
 }
@@ -486,6 +486,6 @@ ul {
   background-color: transparent;
 }
 
-.csatoltFajlok .torolGomb{
+.csatoltFajlok .torolGomb {
   cursor: pointer;
 }
