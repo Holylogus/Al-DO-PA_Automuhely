@@ -11,7 +11,7 @@ table {
   display: table;
   table-layout: fixed;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
 }
 .mail-box aside {
   display: table-cell;
