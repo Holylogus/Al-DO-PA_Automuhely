@@ -4,7 +4,7 @@ import ComposeModal from "./composeModal.js";
 class InfoView {
   constructor() {
     new ComposeModal();
-    new Inbox();
+    new Inbox($("tbody"));
   }
 
  
