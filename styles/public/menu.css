@@ -1,4 +1,4 @@
- .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,14 +6,12 @@
   z-index: 1;
   margin-right: 0;
   background-color: rgba(0, 0, 0, 0.575);
-
 }
 
 .navbar-nav {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-
 }
 
 .nav-item {
@@ -23,7 +21,6 @@
   font-weight: 400;
   border-radius: 5px;
 }
-
 
 .nav-link {
   text-decoration: none;
@@ -36,7 +33,6 @@
 
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.582);
-
 }
 
 .navbar-brand {
@@ -51,4 +47,26 @@
   color: white;
   position: absolute;
   right: 40px;
-} 
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .loginUser {
+    top: 5px;
+    right: 4%;
+    bottom: 5px;
+  }
+  .nav-item:hover {
+    background-color: unset;
+  }
+  .nav-item a {
+    text-align: center;
+  }
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+}

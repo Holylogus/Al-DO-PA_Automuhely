@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/e618538ebf.js"
@@ -146,13 +146,11 @@
                 <li><a class="dropdown-item" href="#">Műszaki vizsga</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a href="../public/login.html" class="loginUser">
-                <i class="fa-regular fa-user loginUser"></i
-              ></a>
-            </li>
           </ul>
         </div>
+        <a href="../public/login.html" class="loginUser">
+          <i class="fa-regular fa-user loginUser"></i
+        ></a> 
       </div>
     </nav>
     <main>
@@ -165,7 +163,7 @@
           <aside class="sm-side">
             <div class="user-head">
               <div class="user-name">
-                <h5><a href="#">ALDOPA</a></h5>
+                <h5><a href="../../index.html">ALDOPA</a></h5>
                 <span><a href="#">aldopa@info.com</a></span>
               </div>
             </div>
@@ -203,7 +201,6 @@
                     <div class="modal-body">
                       <form role="form" class="form-horizontal">
                         <div class="form-group">
-                          <!-- <label class="col-lg-2 control-label"></label> -->
                           <div class="col-lg-12">
                             <input
                               type="text"
@@ -214,19 +211,7 @@
                             <div class="to">To</div>
                           </div>
                         </div>
-                        <!-- <div class="form-group">
-                          <label class="col-lg-2 control-label">Másolat</label>
-                          <div class="col-lg-12">
-                            <input
-                              type="text"
-                              placeholder=""
-                              id="cc"
-                              class="form-control"
-                            />
-                          </div>
-                        </div> -->
                         <div class="form-group">
-                          <!-- <label class="col-lg-2 control-label"></label> -->
                           <div class="col-lg-12">
                             <input
                               type="text"
@@ -237,7 +222,6 @@
                           </div>
                         </div>
                         <div class="form-group">
-                          <!-- <label class="col-lg-2 control-label"></label> -->
                           <br />
                           <div class="col-lg-12">
                             <textarea
@@ -327,27 +311,23 @@
                 </div>
               </form>
             </div>
-            <div class="inbox-body">
+            <div class="inbox-body inbox-body-mails">
               <div class="mail-option">
                 <div class="chk-all">
-                  <input
-                    type="checkbox"
-                    class="mail-checkbox mail-group-checkbox"
-                  />
-                  <div class="btn-group">
+                  <div class="btn-group" role="group"> 
+                    <input type="checkbox" class="mail-checkbox mail-group-checkbox" >
                     <a
-                      data-toggle="dropdown"
-                      href="#"
+                      data-toggle="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
                       class="btn mini all"
                       aria-expanded="false"
                     >
-                      Mind
                       <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#"> Nincs</a></li>
-                      <li><a href="#"> Olvasott</a></li>
-                      <li><a href="#"> Olvasatlan</a></li>
+                    </a><ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a href="#" class="dropdown-item"> Nincs</a></li>
+                      <li><a href="#" class="dropdown-item"> Olvasott</a></li>
+                      <li><a href="#" class="dropdown-item"> Olvasatlan</a></li>
                     </ul>
                   </div>
                 </div>
@@ -357,54 +337,40 @@
                     data-original-title="Refresh"
                     data-placement="top"
                     data-toggle="dropdown"
-                    href="#"
+                    href="uzenetek.html"
                     class="btn mini tooltips"
                   >
                     <i class="fa fa-refresh"></i>
                   </a>
                 </div>
-                <div class="btn-group hidden-phone">
+
+                <div class="btn-group">
                   <a
-                    data-toggle="dropdown"
-                    href="#"
-                    class="btn mini blue"
+                    data-toggle="dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    class="btn mini all"
                     aria-expanded="false"
                   >
-                    Több
-                    <i class="fa fa-angle-down"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-pencil"></i> Megjelölés olvasottként</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-ban"></i> Spam</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#"><i class="fa fa-trash-o"></i> Törlés</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="btn-group">
-                  <a data-toggle="dropdown" href="#" class="btn mini blue">
                     Áthelyez
                     <i class="fa fa-angle-down"></i>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <a href="#"
+                      <a class="dropdown-item"
                         ><i class="fa fa-pencil"></i> Megjelölés olvasottként</a
                       >
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-ban"></i> Spam</a>
+                      <a class="dropdown-item"
+                        ><i class="fa fa-ban"></i> Spam</a
+                      >
                     </li>
                     <li class="divider"></li>
                     <li>
-                      <a href="#"><i class="fa fa-trash-o"></i> Törlés</a>
+                      <a class="dropdown-item"
+                        ><i class="fa fa-trash-o"></i> Törlés</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -412,7 +378,7 @@
                 <ul class="unstyled inbox-pagination">
                   <li>
                     <span>
-                      <!-- oldalak száma ide jön -->
+                      <!-- oldalak száma ide jön -->1-50 of <span class="osszesEmailSzama"></span>
                     </span>
                   </li>
                   <li>
@@ -428,8 +394,8 @@
                 </ul>
               </div>
               <table class="table table-inbox">
-                <!-- idejön a beérkező -->
                 <tbody>
+                  <!-- idejön a beérkező -->
                 </tbody>
               </table>
             </div>
