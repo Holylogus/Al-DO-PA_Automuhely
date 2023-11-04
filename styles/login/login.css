@@ -118,7 +118,7 @@ span.ikon {
     left: 2%;
 }
 
-i {
+i:not(.loginUser) {
     position: fixed;
     font-size: 1.7em;
     color: rgb(71, 71, 71);
