@@ -9,6 +9,7 @@ class Uzenet {
   #cimzett;
   #olvasott;
   #txt;
+  #hely;
 
   constructor(
     szulo,
@@ -20,7 +21,8 @@ class Uzenet {
     szoveg,
     feladoEmail,
     cimzett,
-    olvasott
+    olvasott,
+    hely
   ) {
     this.#kedvenc = kedvenc;
     this.#felado = felado;
@@ -31,6 +33,7 @@ class Uzenet {
     this.#feladoEmail = feladoEmail;
     this.#cimzett = cimzett;
     this.#olvasott = olvasott;
+    this.#hely = hely;
     this.ev = idopont.substring(0, 4);
     this.honap = idopont.substring(4, 6);
     this.nap = idopont.substring(6, 8);

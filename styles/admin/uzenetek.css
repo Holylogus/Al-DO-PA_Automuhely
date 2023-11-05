@@ -501,12 +501,14 @@ ul {
 .csatoltFajlok .torolGomb {
   cursor: pointer;
 }
-.reszletekRejt {
-  display: none;
-}
+
 .reszletekFul{
   cursor: pointer;
 }
-.reszletekMutat{
+.mutat{
   display: block;
+}
+
+.rejt{
+  display: none;
 }

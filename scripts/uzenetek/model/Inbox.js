@@ -9,20 +9,22 @@ const kettosNap = nap.length === 1 ? `0${nap}` : nap;
 
 class Inbox {
   #szulo;
+  #lista;
   #bejovoUzenetek;
   #objektumok;
-  constructor(szulo) {
+  constructor(szulo, lista) {
     this.#szulo = szulo;
     this.#objektumok = [];
+    this.#lista = lista;
     this.objLetrehoz(LISTA);
     this.#bejovoUzenetek = this.txtOsszeallit(this.#objektumok);
     szulo.html(this.#bejovoUzenetek);
-    this.trElemek = $("tr");
-    this.trElemek.each((index, element) => {
+  }
+  megnyitFigyel(lista){
+    lista.each((index, element) => {
       element.addEventListener("click", () =>
         this.#szulo.html(this.#objektumok[index].mutat())
       );
-      console.log("mutat");
     });
   }
 
@@ -38,7 +40,8 @@ class Inbox {
         elem["szoveg"],
         elem["feladoEmail"],
         elem["cimzett"],
-        elem["olvasott"]
+        elem["olvasott"],
+        elem["hely"]
       );
       this.#objektumok.push(uzenet);
     });
