@@ -3,11 +3,11 @@ $("#submit").on("click", function (event) {
 });
 
 $(document).ready(function () {
-    $(".menuElem").mouseenter(function () {
-      $(this).find(".almenu").show();
-    });
+    // $(".menuElem").mouseenter(function () {
+    //   $(this).find(".almenu").show();
+    // });
 
-    $(".menuElem").mouseleave(function () {
-      $(this).find(".almenu").hide();
-    });
+    // $(".menuElem").mouseleave(function () {
+    //   $(this).find(".almenu").hide();
+    // });
   });

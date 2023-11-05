@@ -17,11 +17,19 @@ class Inbox {
     this.objLetrehoz(LISTA);
     this.#bejovoUzenetek = this.txtOsszeallit(this.#objektumok);
     szulo.html(this.#bejovoUzenetek);
+    this.trElemek = $("tr");
+    this.trElemek.each((index, element) => {
+      element.addEventListener("click", () =>
+        this.#szulo.html(this.#objektumok[index].mutat())
+      );
+      console.log("mutat");
+    });
   }
 
   objLetrehoz(lista) {
     lista.forEach((elem, index) => {
       let uzenet = new Uzenet(
+        this.#szulo,
         elem["kedvenc"],
         elem["felado"],
         elem["targy"],
@@ -57,9 +65,13 @@ class Inbox {
       if (elem.ev == ev && elem.honap == honap && elem.nap == kettosNap) {
         txt += `<td class="view-message text-right">${elem.ora}:${elem.perc}</td></tr>`;
       } else if (elem.ev == ev) {
-        txt += `<td class="view-message text-right">${elem.getHonap()} ${elem.nap}</td></tr>`;
+        txt += `<td class="view-message text-right">${elem.getHonap()} ${
+          elem.nap
+        }</td></tr>`;
       } else {
-        txt += `<td class="view-message text-right">${elem.ev%100} ${elem.getHonap()} ${elem.nap}</td></tr>`;
+        txt += `<td class="view-message text-right">${
+          elem.ev % 100
+        } ${elem.getHonap()} ${elem.nap}</td></tr>`;
       }
     });
     return txt;

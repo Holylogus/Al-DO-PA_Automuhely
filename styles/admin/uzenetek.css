@@ -118,10 +118,9 @@ ul.inbox-nav li a:hover,
 ul.inbox-nav li.active a,
 ul.inbox-nav li a:focus {
   /*  AKTÍV */
-  border-radius: 10px;
-
   background: none repeat scroll 0 0 #0000009d;
   color: white;
+  border-radius: 10px;
 }
 ul.inbox-nav li a i {
   color: #ffffff;
@@ -245,12 +244,11 @@ ul.inbox-pagination li {
   width: 100%;
 }
 .mail-option .chk-all,
-.mail-option .btn-group a.btn:not(.chk) {
-  margin-right: 5px;
+.mail-option .btn-group a.btn:not(.chk-all) {
   display: inline-block;
+
 }
 .mail-option .btn-group a.btn:not(.chk-all) {
-  margin-right: 5px;
   border-radius: 3px !important;
   color: #ffffff;
   display: inline-block;
@@ -260,6 +258,9 @@ ul.inbox-pagination li {
   color: black;
   background-color: white;
 }
+
+
+
 input[type="checkbox"] {
   height: 20px;
   border: 2px solid #000;
@@ -269,7 +270,6 @@ input[type="checkbox"] {
   width: 20px;
 }
 .mail-option .btn-group {
-  background: initial;
   background: none repeat scroll 0 0 #00000085;
 }
 .inbox-pagination a.np-btn {
@@ -288,6 +288,8 @@ input[type="checkbox"] {
 .mail-option .btn-group a.all {
   border: medium none;
   padding: 0;
+
+
 }
 .inbox-pagination a.np-btn {
   margin-left: 5px;
@@ -498,4 +500,13 @@ ul {
 
 .csatoltFajlok .torolGomb {
   cursor: pointer;
+}
+.reszletekRejt {
+  display: none;
+}
+.reszletekFul{
+  cursor: pointer;
+}
+.reszletekMutat{
+  display: block;
 }

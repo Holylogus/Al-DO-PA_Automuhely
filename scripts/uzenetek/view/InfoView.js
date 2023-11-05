@@ -4,11 +4,12 @@ import ComposeModal from "./composeModal.js";
 class InfoView {
   constructor() {
     new ComposeModal();
-    console.log($("tbody"))
-    new Inbox($("tbody"));
-  }
+    let inbox = new Inbox($("tbody"));
 
- 
+    $(".left-arrow").on("click", () => {
+      inbox = new Inbox($("tbody"));
+    });
+  }
 }
 
 export default InfoView;
