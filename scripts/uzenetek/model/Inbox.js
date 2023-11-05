@@ -19,12 +19,12 @@ class Inbox {
     this.objLetrehoz(LISTA);
     this.#bejovoUzenetek = this.txtOsszeallit(this.#objektumok);
     szulo.html(this.#bejovoUzenetek);
-    this.trElemek = $("tr");
-    this.trElemek.each((index, element) => {
+  }
+  megnyitFigyel(lista){
+    lista.each((index, element) => {
       element.addEventListener("click", () =>
         this.#szulo.html(this.#objektumok[index].mutat())
       );
-      console.log("mutat");
     });
   }
   megnyitFigyel(lista){

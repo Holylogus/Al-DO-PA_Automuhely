@@ -90,6 +90,7 @@ export const LISTA = [
     feladoEmail: "csefi@example.com",
     cimzett: "aldopa@info.com",
     olvasott: "read",
+    hely: "inbox"
   },
 
   {
@@ -103,6 +104,7 @@ export const LISTA = [
     feladoEmail: "toth@example.com",
     cimzett: "aldopa@info.com",
     olvasott: "unread",
+    hely: "inbox"
   },
   {
     kedvenc: "false",
@@ -115,6 +117,7 @@ export const LISTA = [
     feladoEmail: "szlucska@example.com",
     cimzett: "aldopa@info.com",
     olvasott: "unread",
+    hely: "inbox"
   },
   {
     kedvenc: "false",
@@ -127,6 +130,7 @@ export const LISTA = [
     feladoEmail: "toth@example.com",
     cimzett: "aldopa@info.com",
     olvasott: "unread",
+    hely: "inbox"
   },
 
   {
@@ -140,5 +144,6 @@ export const LISTA = [
     feladoEmail: "toth@example.com",
     cimzett: "aldopa@info.com",
     olvasott: "unread",
+    hely: "inbox"
   },
 ];
