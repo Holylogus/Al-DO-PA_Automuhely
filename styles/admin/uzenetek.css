@@ -6,9 +6,7 @@ main {
   width: auto;
   margin: 1.5em;
 }
-table {
-  --bs-table-hover-bg: none !important;
-}
+
 .mail-box {
   border-collapse: collapse;
   border-spacing: 0;
@@ -25,7 +23,6 @@ table {
 }
 .mail-box .sm-side {
   background: none repeat scroll 0 0 #00000073;
-  border-radius: 4px 0 0 4px;
 }
 .offcanvas{
   --bs-offcanvas-max-width: 17em;
@@ -225,7 +222,7 @@ ul.labels-info li a i {
   cursor: pointer;
 }
 
-.table-inbox tr:hover {
+.table-inbox tr:hover{
   background: none repeat scroll 0 0 #4b4b4bdc;
   margin: 0;
 }
@@ -535,7 +532,7 @@ ul {
 }
 
 /* .custom-btn-group{
-  position: rela;
+  position: relative;
   right: 0;
 } */
 /* transform: translateX(210%); */

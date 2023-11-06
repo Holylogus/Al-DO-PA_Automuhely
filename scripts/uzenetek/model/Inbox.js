@@ -27,14 +27,6 @@ class Inbox {
       );
     });
   }
-  megnyitFigyel(lista) {
-    lista.each((index, element) => {
-      element.addEventListener("click", () =>
-        this.#szulo.html(this.#objektumok[index].mutat())
-      );
-    });
-  }
-
   objLetrehoz(lista) {
     lista.forEach((elem, index) => {
       let uzenet = new Uzenet(
@@ -57,8 +49,8 @@ class Inbox {
     let txt = ``;
     obj.forEach((elem) => {
       txt += `<tr class="${elem.getOlvasott()} col-lg-12 col-md-12 col-sm-12">      
-      <td class="inbox-small-cells">
-      <input type="checkbox" class="mail-checkbox" />
+      <td class="inbox-small-cells mail-checkbox-td">
+      <input type="checkbox" class="mail-checkbox-td" />
       </td>
       <td class="inbox-small-cells">
       <i class="fa fa-star"></i>
