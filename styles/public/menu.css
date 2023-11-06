@@ -1,4 +1,4 @@
-.navbar {
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
 }
 
 .nav-item {
@@ -21,6 +22,7 @@
   font-weight: 400;
   border-radius: 5px;
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -38,21 +40,26 @@
 
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.582);
+
 }
 
 .navbar-brand {
   position: absolute;
   left: 30px;
+  left: 30px;
 }
 
-.loginUser {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: white;
-  position: absolute;
-  right: 40px;
-}
+  .loginUser {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 40px;
+  }
+  .container-fluid{
+  width: unset;
+  }
 
 header, .szolgaltatasok{
   --bs-gutter-x: 0 !important;

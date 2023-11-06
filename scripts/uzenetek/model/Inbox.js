@@ -20,14 +20,14 @@ class Inbox {
     this.#bejovoUzenetek = this.txtOsszeallit(this.#objektumok);
     szulo.html(this.#bejovoUzenetek);
   }
-  megnyitFigyel(lista){
+  megnyitFigyel(lista) {
     lista.each((index, element) => {
       element.addEventListener("click", () =>
         this.#szulo.html(this.#objektumok[index].mutat())
       );
     });
   }
-  megnyitFigyel(lista){
+  megnyitFigyel(lista) {
     lista.each((index, element) => {
       element.addEventListener("click", () =>
         this.#szulo.html(this.#objektumok[index].mutat())
@@ -56,7 +56,7 @@ class Inbox {
   txtOsszeallit(obj) {
     let txt = ``;
     obj.forEach((elem) => {
-      txt += `<tr class="${elem.getOlvasott()}">
+      txt += `<tr class="${elem.getOlvasott()} col-lg-12 col-md-12 col-sm-12">      
       <td class="inbox-small-cells">
       <input type="checkbox" class="mail-checkbox" />
       </td>
