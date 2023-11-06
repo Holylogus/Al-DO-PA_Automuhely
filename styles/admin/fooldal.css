@@ -1,0 +1,26 @@
+.card {
+  height: 10em;
+}
+
+.card a {
+  font-size: 4em;
+}
+.card i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main {
+  width: 60vw;
+  margin-top: 5%;
+}
+.card a {
+  color: rgb(68, 65, 65);
+  text-decoration: none;
+}
+
+.card a:hover {
+    color: rgb(23, 118, 207);
+  }

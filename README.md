@@ -1,4 +1,4 @@
 # AL-DO-PA_Autoservice
 
 pages:
-https://holylogus.github.io/Al-DO-PA_Automuhely/index.html
+https://holylogus.github.io/Al-DO-PA_Automuhely/

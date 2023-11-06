@@ -1,0 +1,14 @@
+.container {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    height: 80vh;
+  }
+  
+  .img {
+    background-image: url("../../imgs/szolgaltatasok/munkadijak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
