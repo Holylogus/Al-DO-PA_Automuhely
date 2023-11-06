@@ -49,14 +49,17 @@
   left: 30px;
 }
 
-.loginUser {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: white;
-  position: absolute;
-  right: 40px;
-}
+  .loginUser {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 40px;
+  }
+  .container-fluid{
+  width: unset;
+  }
 
 header, .szolgaltatasok{
   --bs-gutter-x: 0 !important;
