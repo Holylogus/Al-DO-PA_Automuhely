@@ -13,20 +13,18 @@ html{
 
 
 /* Small devices such as large phones (640px and up) */
-@media only screen and (max-width: 40em) {
-  /* @import url(/style/responsive/home.css); */
-}
+
 
 /* Medium devices such as tablets (768px and up) */
-@media only screen and (max-width: 48em) {
+@media only screen and (min-width: 1279px) {
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1280px) {
 }
 
 /* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 1281px) {
 }
 
 body {

@@ -25,18 +25,15 @@
       crossorigin="anonymous"
     ></script>
     <!-- css -->
-    <link rel="stylesheet" href="./styles/public/style.css" />
     <link rel="stylesheet" href="./styles/public/header.css" />
-    <link rel="stylesheet" href="./styles/public/szolgaltatasok.css">
+    <link rel="stylesheet" href="./styles/public/szolgaltatasok.css" />
+    <link rel="stylesheet" href="./styles/public/style.css" />
     <title>Al-Do-Pa Car</title>
   </head>
 
   <body>
-    <header>
-      <nav
-      class="navbar navbar-expand-lg"
-      data-bs-theme="dark"
-    >
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
           <button
@@ -61,9 +58,15 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="akcio" href="./html/public/akciok.html">Akciók</a>
+                <a class="nav-link" id="akcio" href="./html/public/akciok.html"
+                  >Akciók</a
+                >
               </li>
-              <li class="nav-item"><a class="nav-link" href="html/public/munkadijak.html">Munkadíjak</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/public/munkadijak.html"
+                  >Munkadíjak</a
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -106,69 +109,126 @@
           </div>
           <a href="./html/public/login.html" class="loginUser">
             <i class="fa-regular fa-user loginUser"></i
-          ></a> 
+          ></a>
         </div>
       </nav>
 
-      <video autoplay controls loop muted>
+      <video autoplay controls loop muted class="col-sm-12 col-md-12 w-100">
         <source src="./imgs/header/headerVideo3.mp4" />
         <!-- <source src="./imgs/header/headerVideo.mp4" /> -->
       </video>
     </header>
 
-    <main>
-      <div class="szolgaltatasok">
-        <div>
-          <img src="./imgs/szolgaltatasok/Akkumulator_csere.jpg" alt="" />
-          <h2>Akkumulátor</h2>
-          <p>
-            Ha nehezen indul be a kocsid, valószínű az akkumulátorral van gond. Mielőbb keresd fel egyik szervizünket, hogy kiderítsük, melyik fődarab hibás. Az átvizsgálás ingyenes.
-          </p>
+    <main class="container-fluid ">
+      <div class="szolgaltatasoka row">
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/Akkumulator_csere.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/futomu beallítas.jpg" alt="" />
-          <h2>Futómű</h2>
-          <p>Valószínű elállítódott a futómű, ha furcsa, kopogó hangot hallasz, jobbra vagy balra húz a kormány, esetleg a gumiabroncsok egyenlőtlenül kopnak.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/futomubeallítas.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/időszakos szerviz.jpg" alt="" />
-          <h2>Időszakos szerviz</h2>
-          <p>Gondoskodj családod és saját magad biztonságáról! Szervizeltesd évente legalább egyszer az autódat! Két csomagunk közül választhatsz: Kisszerviz és Nagyszerviz. Foglalj időpontot most Időszakos szervizre/Kilométerszervizre!</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/időszakos szerviz.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/Klíma.jpg" alt="" />
-          <h2>Klíma</h2>
-          <p>Enyhíti a fáradtságérzeted, növeli a koncentrálóképességed. Időben töltesd fel és fertőtlenítsd a klímát. Ingyen átvizsgáljuk.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/Klíma.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/atvizsgalas.jpg" alt="" />
-          <h2>Ingyenes műszaki felmérés</h2>
-          <p>AL-DO-PA szervizeinkben a gépjárművek műszaki állapotfelmérését az ügyfél bevonásával, díjtalanul végezzük el.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/atvizsgalas.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/fekcsere.jpg" alt="" />
-          <h2>Fékrendszer</h2>
-          <p>Akadozik a fék? A fékrendszer a gépkocsi legfontosabb biztonsági berendezése. Még ma hozd be ingyenes ellenőrzésre a kocsit. A családod biztonsága múlik rajta.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/fekcsere.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/gumicsere.jpg" alt="" />
-          <h2>Gumiabroncs,gumicsere</h2>
-          <p>Ha észreveszed: a gumiabroncsok helytelenül kopnak; ha az autód félrehúz, rázódik; nem áll egyenesen a kormány; keresd fel szervizünket, ingyen átvizsgáljuk.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/gumicsere.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/kipufogó.jpg" alt="" />
-          <h2>Kipufogó</h2>
-          <p>Furcsa zajt hallasz a gépkocsi alsó részéből? Kipufogógáz-szivárgást észlelsz? Mielőbb keresd fel szervizünket! Ingyen átvizsgáljuk.</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/kipufogó.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/muszaki vizsga.jpg" alt="" />
-          <h2>Műszaki vizsga</h2>
-          <p>1 nap alatt elintézzük a műszaki vizsgáztatást ügyintézéssel együtt. Autódat előkészítjük a  vizsgára. Neked gond, nekünk rutin. Jelentkezz be online!</p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/muszaki vizsga.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+
+          </div>
         </div>
-        <div>
-          <img src="./imgs/szolgaltatasok/olajcsere.jpg" alt="" srcset="" />
-          <h2>Olajcsere</h2>
-          <p>Az olaj csökkenti a súrlódást a motor alkatrészei között. Biztosítja a súrlódó alkatrészek hűtését, a motor tisztaságát, véd a korrózió ellen. A kevés, híg vagy elhasználódott olaj miatt a mozgó alkatrészek kopása felgyorsul. </p>
+        <div class="card border-0 text-white col-lg-3 col-md-4 col-sm-12 p-4">
+          <img
+            src="./imgs/szolgaltatasok/olajcsere.jpg"
+            class="card-img h-100 "
+            alt="..."
+          />
+          <div class="card-img-overlay ">
+            <h5 class="card-title  bg-opacity-50 text-center position-relative top-50 translate-middle-y">Card title</h5>
+          </div>
         </div>
       </div>
     </main>
