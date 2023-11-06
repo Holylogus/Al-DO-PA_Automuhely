@@ -6,10 +6,6 @@
   z-index: 1;
   margin-right: 0;
   background-color: rgba(0, 0, 0, 0.575);
-<<<<<<< HEAD
-
-=======
->>>>>>> ee771ac4b87cb5bb974cfba45f6ee5935adcb18b
 }
 
 .navbar-nav {
@@ -54,10 +50,8 @@
   color: white;
   position: absolute;
   right: 40px;
-<<<<<<< HEAD
-} 
-=======
 }
+
 .container-fluid{
 width: unset;
 }
@@ -83,4 +77,3 @@ width: unset;
     background-color: rgba(0, 0, 0, 0.452);
   }
 }
->>>>>>> ee771ac4b87cb5bb974cfba45f6ee5935adcb18b

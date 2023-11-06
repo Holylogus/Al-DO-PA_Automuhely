@@ -1,8 +1,13 @@
+h1,h6{
+  text-align: center;
+  padding: 2vh;
+}
+
 .container {
     margin-top: 5vh;
     display: grid;
     grid-template-columns: 4fr 2fr;
-    height: 80vh;
+    
   }
   
   .img {
@@ -11,4 +16,23 @@
     background-size: cover;
     width: 100%;
   }
+
+  #container-2{
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .img-2 {
+    background-image: url("../../imgs/szolgaltatasok/steven-binotto-ElIOUx7VZ8M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .img-3 {
+    background-image: url("../../imgs/szolgaltatasok/dhiva-krishna-YApS6TjKJ9c-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
   
