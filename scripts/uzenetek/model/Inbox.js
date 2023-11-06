@@ -49,7 +49,7 @@ class Inbox {
   txtOsszeallit(obj) {
     let txt = ``;
     obj.forEach((elem) => {
-      txt += `<tr class="${elem.getOlvasott()}">
+      txt += `<tr class="${elem.getOlvasott()} col-lg-12 col-md-12 col-sm-12">
       <td class="inbox-small-cells">
       <input type="checkbox" class="mail-checkbox" />
       </td>

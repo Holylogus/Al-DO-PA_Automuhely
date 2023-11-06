@@ -158,9 +158,20 @@
           rel="stylesheet prefetch"
           href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
         />
+        <!-- <button
+          class="btn btn-success"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          Menu
+        </button> -->
+
         <div class="mail-box">
-          <aside class="sm-side">
-            <div class="user-head">
+          
+          <aside class="sm-side col-lg-2 col-md-2 col-sm-2">
+            <div class="user-head ">
               <div class="user-name">
                 <h5><a href="../../index.html">ALDOPA</a></h5>
                 <span><a href="#">aldopa@info.com</a></span>
@@ -298,7 +309,7 @@
               </div>
             </div>
           </aside>
-          <aside class="lg-side">
+          <aside class="lg-side col-lg-10 col-md-10 col-sm-10">
             <div class="inbox-head">
               <h3>Bejövő emailek</h3>
               <form action="#" class="pull-right position">
@@ -310,9 +321,12 @@
                 </div>
               </form>
             </div>
-            <div class="inbox-body inbox-body-mails">
-              <div class="mail-option">
-                <div class="btn-group left-arrow">
+            <div class="inbox-body inbox-body-mails w-100">
+              <!-- szerkesztés -->
+              <div class="mail-option row-cols-auto">
+                <div
+                  class="btn-group left-arrow col-lg-1 col-md-1 col-sm-1 mx-1"
+                >
                   <a
                     data-original-title="Back"
                     data-placement="top"
@@ -322,21 +336,25 @@
                     <i class="fa-solid fa-arrow-left"></i>
                   </a>
                 </div>
-                <div class="chk-all">
-                  <div class="btn-group" role="group">
-                    <input
-                      type="checkbox"
-                      class="mail-checkbox mail-group-checkbox"
-                    />
-                    <a
-                      data-toggle="dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      class="btn mini all"
-                      aria-expanded="false"
-                    >
-                      <i class="fa fa-angle-down"></i>
-                    </a>
+                <div class="chk-all col-lg-1 col-md-2 col-sm-2 mx-0">
+                  <div class="btn-group w-100" role="group">
+                    <div class="col-6">
+                      <input
+                        type="checkbox"
+                        class="mail-checkbox mail-group-checkbox"
+                      />
+                    </div>
+                    <div class="col-6">
+                      <a
+                        data-toggle="dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        class="btn mini all"
+                        aria-expanded="false"
+                      >
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                    </div>
                     <ul class="dropdown-menu dropdown-menu-dark">
                       <li><a href="#" class="dropdown-item"> Nincs</a></li>
                       <li><a href="#" class="dropdown-item"> Olvasott</a></li>
@@ -345,7 +363,7 @@
                   </div>
                 </div>
 
-                <div class="btn-group refresh">
+                <div class="btn-group col-lg-1 col-md-1 col-sm-1 mx-1">
                   <a
                     data-original-title="Refresh"
                     data-placement="top"
@@ -356,7 +374,7 @@
                   </a>
                 </div>
 
-                <div class="btn-group">
+                <div class="btn-group col-lg-1 col-md-1 col-sm-1 mx-1">
                   <a
                     data-toggle="dropdown-toggle"
                     type="button"
@@ -364,8 +382,7 @@
                     class="btn mini all"
                     aria-expanded="false"
                   >
-                    Áthelyez
-                    <i class="fa fa-angle-down"></i>
+                    <i class="fa-regular fa-folder"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li>
@@ -386,28 +403,28 @@
                     </li>
                   </ul>
                 </div>
+                <div
+                  class="btn-group custom-btn-group col-lg-2 col-md-2 col-sm-3 mx-1"
+                >
+                  <!-- <span class="osszesEmailSzama ">1-50 of</span> -->
 
-                <ul class="unstyled inbox-pagination">
-                  <li>
-                    <span>
-                      <!-- oldalak száma ide jön -->1-50 of
-                      <span class="osszesEmailSzama"></span>
-                    </span>
-                  </li>
-                  <li>
-                    <a class="np-btn" href="#"
-                      ><i class="fa fa-angle-left pagination-left"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="np-btn" href="#"
-                      ><i class="fa fa-angle-right pagination-right"></i
-                    ></a>
-                  </li>
-                </ul>
+                  <ul class="unstyled inbox-pagination">
+                    <li class="col-3 mx-2">
+                      <a class="np-btn" href="#">
+                        <i class="fa fa-angle-left pagination-left"></i>
+                      </a>
+                    </li>
+                    <li class="col-3 mx-2">
+                      <a class="np-btn" href="#">
+                        <i class="fa fa-angle-right pagination-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
               <table class="table table-inbox">
-                <tbody>
+                <tbody class="scrb">
                   <!-- idejön a beérkező -->
                 </tbody>
               </table>
@@ -419,3 +436,149 @@
     <footer></footer>
   </body>
 </html>
+<!-- 
+
+
+           <div
+            class="offcanvas offcanvas-start text-bg-dark"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <aside class="">
+                <div class="user-head">
+                  <div class="user-name">
+                    <h5><a href="../../index.html">ALDOPA</a></h5>
+                    <span><a href="#">aldopa@info.com</a></span>
+                  </div>
+                </div>
+                <div class="inbox-body">
+                  <a
+                    href="#myModal"
+                    data-toggle="modal"
+                    title="Compose"
+                    class="btn btn-compose"
+                  >
+                    Üzenet írása
+                  </a>
+                  <div
+                    aria-hidden="true"
+                    aria-labelledby="myModalLabel"
+                    role="dialog"
+                    tabindex="-1"
+                    id="myModal"
+                    class="modal fade"
+                    style="display: none"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Üzenet írása</h4>
+                          <button
+                            aria-hidden="true"
+                            data-dismiss="modal"
+                            class="close"
+                            type="button"
+                          >
+                            X
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                              <div class="col-lg-12">
+                                <input
+                                  type="text"
+                                  placeholder="Címzett"
+                                  id="inputEmail1"
+                                  class="form-control cimzett"
+                                />
+                                <div class="to">To</div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-lg-12">
+                                <input
+                                  type="text"
+                                  placeholder="Tárgy"
+                                  id="inputPassword1"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <br />
+                              <div class="col-lg-12">
+                                <textarea
+                                  rows="10"
+                                  cols="30"
+                                  class="form-control"
+                                  id=""
+                                  name=""
+                                  placeholder="Üzenet"
+                                ></textarea>
+                                <span class="csatoltFajlok"></span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-lg-offset-2 col-lg-10">
+                                <span class="btn fileinput-button">
+                                  <i class="fa fa-plus fa fa-white"></i>
+                                  <span>Csatolmány</span>
+                                  <input
+                                    type="file"
+                                    name="files[]"
+                                    multiple=""
+                                  />
+                                </span>
+                                <button class="btn btn-send" type="submit">
+                                  Send
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="inbox-nav inbox-divider">
+                  <li class="active">
+                    <a href="#"
+                      ><i class="fa fa-inbox"></i> Bejövő
+                      <span class="label label-danger pull-right">
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-envelope-o"></i> Elküldött</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark-o"></i> Fontos</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-external-link"></i> Piszkozatok
+                      <span class="label label-info pull-right"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash-o"></i> Törölt</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          -->
+
+
