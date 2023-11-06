@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/e618538ebf.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- bootstrap -->
@@ -27,12 +28,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../../styles/public/style.css" />
     <link rel="stylesheet" href="../../styles/admin/adminStyle.css" />
-<<<<<<< HEAD
     <link rel="stylesheet" href="../../styles/admin/uzenetek.css" />
     <title>Al-Do-Pa | Üzenetek</title>
-=======
-    <title>Al-Do-Pa | Üzenetek </title>
->>>>>>> 474a2ee (linkek jav. admin)
   </head>
 
   <body>
@@ -162,176 +159,188 @@
           rel="stylesheet prefetch"
           href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
         />
-        <div class="mail-box">
-          <aside class="sm-side">
-            <div class="user-head">
-              <div class="user-name">
-                <h5><a href="../../index.html">ALDOPA</a></h5>
-                <span><a href="#">aldopa@info.com</a></span>
-              </div>
+        <!-- <button
+          class="btn btn-success"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          Menu
+        </button> -->
+        <aside class="sm-side col-lg-2 col-md-2 col-sm-2">
+          <div class="user-head">
+            <div class="user-name">
+              <h5><a href="../../index.html">ALDOPA</a></h5>
+              <span><a href="#">aldopa@info.com</a></span>
             </div>
-            <div class="inbox-body">
-              <a
-                href="#myModal"
-                data-toggle="modal"
-                title="Compose"
-                class="btn btn-compose"
-              >
-                Üzenet írása
-              </a>
-              <div
-                aria-hidden="true"
-                aria-labelledby="myModalLabel"
-                role="dialog"
-                tabindex="-1"
-                id="myModal"
-                class="modal fade"
-                style="display: none"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Üzenet írása</h4>
-                      <button
-                        aria-hidden="true"
-                        data-dismiss="modal"
-                        class="close"
-                        type="button"
-                      >
-                        X
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form role="form" class="form-horizontal">
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <input
-                              type="text"
-                              placeholder="Címzett"
-                              id="inputEmail1"
-                              class="form-control cimzett"
-                            />
-                            <div class="to">To</div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <input
-                              type="text"
-                              placeholder="Tárgy"
-                              id="inputPassword1"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <br />
-                          <div class="col-lg-12">
-                            <textarea
-                              rows="10"
-                              cols="30"
-                              class="form-control"
-                              id=""
-                              name=""
-                              placeholder="Üzenet"
-                            ></textarea>
-                            <span class="csatoltFajlok"></span>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-lg-offset-2 col-lg-10">
-                            <span class="btn fileinput-button">
-                              <i class="fa fa-plus fa fa-white"></i>
-                              <span>Csatolmány</span>
-                              <input type="file" name="files[]" multiple="" />
-                            </span>
-                            <button class="btn btn-send" type="submit">
-                              Send
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
+          </div>
+          <div class="inbox-body">
+            <a
+              href="#myModal"
+              data-toggle="modal"
+              title="Compose"
+              class="btn btn-compose"
+            >
+              Üzenet írása
+            </a>
+            <div
+              aria-hidden="true"
+              aria-labelledby="myModalLabel"
+              role="dialog"
+              tabindex="-1"
+              id="myModal"
+              class="modal fade"
+              style="display: none"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Üzenet írása</h4>
+                    <button
+                      aria-hidden="true"
+                      data-dismiss="modal"
+                      class="close"
+                      type="button"
+                    >
+                      X
+                    </button>
                   </div>
-                  <!-- /.modal-content -->
+                  <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input
+                            type="text"
+                            placeholder="Címzett"
+                            id="inputEmail1"
+                            class="form-control cimzett"
+                          />
+                          <div class="to">To</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input
+                            type="text"
+                            placeholder="Tárgy"
+                            id="inputPassword1"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <br />
+                        <div class="col-lg-12">
+                          <textarea
+                            rows="10"
+                            cols="30"
+                            class="form-control"
+                            id=""
+                            name=""
+                            placeholder="Üzenet"
+                          ></textarea>
+                          <span class="csatoltFajlok"></span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                          <span class="btn fileinput-button">
+                            <i class="fa fa-plus fa fa-white"></i>
+                            <span>Csatolmány</span>
+                            <input type="file" name="files[]" multiple="" />
+                          </span>
+                          <button class="btn btn-send" type="submit">
+                            Send
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <!-- /.modal-dialog -->
+                <!-- /.modal-content -->
               </div>
-              <!-- /.modal -->
+              <!-- /.modal-dialog -->
             </div>
-            <ul class="inbox-nav inbox-divider">
-              <li class="active">
-                <a href="#"
-                  ><i class="fa fa-inbox"></i> Bejövő
-                  <span class="label label-danger pull-right">
-                    <!-- hány bejövő olvasatlan van -->
-                  </span></a
+            <!-- /.modal -->
+          </div>
+          <ul class="inbox-nav inbox-divider">
+            <li class="active">
+              <a href="#"
+                ><i class="fa fa-inbox"></i> Bejövő
+                <span class="label label-danger pull-right">
+                  <!-- hány bejövő olvasatlan van -->
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-envelope-o"></i> Elküldött</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-bookmark-o"></i> Fontos</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-external-link"></i> Piszkozatok
+                <span class="label label-info pull-right"></span
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-trash-o"></i> Törölt</a>
+            </li>
+          </ul>
+          <div class="inbox-body inbox-footer text-center">
+            <div class="btn-group">
+              <a class="btn mini btn-primary" href="">
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+            <div class="btn-group">
+              <a class="btn mini btn-success" href="">
+                <i class="fa fa-phone"></i>
+              </a>
+            </div>
+            <div class="btn-group">
+              <a class="btn mini btn-info" href="">
+                <i class="fa fa-cog"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+        <aside class="lg-side col-lg-10 col-md-10 col-sm-10">
+          <div class="inbox-head">
+            <h3>Bejövő emailek</h3>
+            <form action="#" class="pull-right position">
+              <div class="input-append">
+                <input type="text" class="sr-input" placeholder="Keresés" />
+                <button class="btn sr-btn" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="inbox-body inbox-body-mails w-100">
+            <!-- szerkesztés -->
+            <div class="mail-option row-cols-auto">
+              <div class="btn-group left-arrow col-lg-1 col-md-1 col-sm-1 mx-1">
+                <a
+                  data-original-title="Back"
+                  data-placement="top"
+                  data-toggle="dropdown"
+                  class="btn mini tooltips"
                 >
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-envelope-o"></i> Elküldött</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-bookmark-o"></i> Fontos</a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-external-link"></i> Piszkozatok
-                  <span class="label label-info pull-right"></span
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-trash-o"></i> Törölt</a>
-              </li>
-            </ul>
-            <div class="inbox-body inbox-footer text-center">
-              <div class="btn-group">
-                <a class="btn mini btn-primary" href="">
-                  <i class="fa fa-plus"></i>
+                  <i class="fa-solid fa-arrow-left"></i>
                 </a>
               </div>
-              <div class="btn-group">
-                <a class="btn mini btn-success" href="">
-                  <i class="fa fa-phone"></i>
-                </a>
-              </div>
-              <div class="btn-group">
-                <a class="btn mini btn-info" href="">
-                  <i class="fa fa-cog"></i>
-                </a>
-              </div>
-            </div>
-          </aside>
-          <aside class="lg-side">
-            <div class="inbox-head">
-              <h3>Bejövő emailek</h3>
-              <form action="#" class="pull-right position">
-                <div class="input-append">
-                  <input type="text" class="sr-input" placeholder="Keresés" />
-                  <button class="btn sr-btn" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="inbox-body inbox-body-mails">
-              <div class="mail-option">
-                <div class="btn-group left-arrow">
-                  <a
-                    data-original-title="Back"
-                    data-placement="top"
-                    data-toggle="dropdown"
-                    class="btn mini tooltips"
-                  >
-                    <i class="fa-solid fa-arrow-left"></i>
-                  </a>
-                </div>
-                <div class="chk-all">
-                  <div class="btn-group" role="group">
+              <div class="chk-all col-lg-1 col-md-2 col-sm-2 mx-0">
+                <div class="btn-group w-100" role="group">
+                  <div class="col-6">
                     <input
                       type="checkbox"
                       class="mail-checkbox mail-group-checkbox"
                     />
+                  </div>
+                  <div class="col-6">
                     <a
                       data-toggle="dropdown-toggle"
                       type="button"
@@ -341,85 +350,223 @@
                     >
                       <i class="fa fa-angle-down"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a href="#" class="dropdown-item"> Nincs</a></li>
-                      <li><a href="#" class="dropdown-item"> Olvasott</a></li>
-                      <li><a href="#" class="dropdown-item"> Olvasatlan</a></li>
-                    </ul>
                   </div>
-                </div>
-
-                <div class="btn-group refresh">
-                  <a
-                    data-original-title="Refresh"
-                    data-placement="top"
-                    data-toggle="dropdown"
-                    class="btn mini tooltips"
-                  >
-                    <i class="fa fa-refresh"></i>
-                  </a>
-                </div>
-
-                <div class="btn-group">
-                  <a
-                    data-toggle="dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    class="btn mini all"
-                    aria-expanded="false"
-                  >
-                    Áthelyez
-                    <i class="fa fa-angle-down"></i>
-                  </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item"
-                        ><i class="fa fa-pencil"></i> Megjelölés olvasottként</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item"
-                        ><i class="fa fa-ban"></i> Spam</a
-                      >
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a class="dropdown-item"
-                        ><i class="fa fa-trash-o"></i> Törlés</a
-                      >
-                    </li>
+                    <li><a href="#" class="dropdown-item"> Nincs</a></li>
+                    <li><a href="#" class="dropdown-item"> Olvasott</a></li>
+                    <li><a href="#" class="dropdown-item"> Olvasatlan</a></li>
                   </ul>
                 </div>
+              </div>
 
-                <ul class="unstyled inbox-pagination">
+              <div class="btn-group col-lg-1 col-md-1 col-sm-1 mx-1">
+                <a
+                  data-original-title="Refresh"
+                  data-placement="top"
+                  data-toggle="dropdown"
+                  class="btn mini tooltips"
+                >
+                  <i class="fa fa-refresh"></i>
+                </a>
+              </div>
+
+              <div class="btn-group col-lg-1 col-md-1 col-sm-1 mx-1">
+                <a
+                  data-toggle="dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  class="btn mini all"
+                  aria-expanded="false"
+                >
+                  <i class="fa-regular fa-folder"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
                   <li>
-                    <span>
-                      <!-- oldalak száma ide jön -->1-50 of
-                      <span class="osszesEmailSzama"></span>
-                    </span>
+                    <a class="dropdown-item"
+                      ><i class="fa fa-pencil"></i> Megjelölés olvasottként</a
+                    >
                   </li>
                   <li>
-                    <a class="np-btn" href="#"
-                      ><i class="fa fa-angle-left pagination-left"></i
-                    ></a>
+                    <a class="dropdown-item"><i class="fa fa-ban"></i> Spam</a>
                   </li>
+                  <li class="divider"></li>
                   <li>
-                    <a class="np-btn" href="#"
-                      ><i class="fa fa-angle-right pagination-right"></i
-                    ></a>
+                    <a class="dropdown-item"
+                      ><i class="fa fa-trash-o"></i> Törlés</a
+                    >
                   </li>
                 </ul>
               </div>
-              <table class="table table-inbox">
-                <tbody>
-                  <!-- idejön a beérkező -->
-                </tbody>
-              </table>
+
+              <div
+                class="btn-group custom-btn-group col-lg-2 col-md-2 col-sm-3 mx-1"
+              >
+                <!-- <span class="osszesEmailSzama ">1-50 of</span> -->
+                <ul class="unstyled inbox-pagination">
+                  <li class="col-3 mx-2">
+                    <a class="np-btn" href="#">
+                      <i class="fa fa-angle-left pagination-left"></i>
+                    </a>
+                  </li>
+                  <li class="col-3 mx-2">
+                    <a class="np-btn" href="#">
+                      <i class="fa fa-angle-right pagination-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </aside>
-        </div>
+            <table class="table table-inbox">
+              <tbody class="scrb">
+                <!-- idejön a beérkező -->
+              </tbody>
+            </table>
+          </div>
+        </aside>
       </div>
     </main>
     <footer></footer>
   </body>
 </html>
+<!-- 
+           <div
+            class="offcanvas offcanvas-start text-bg-dark"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <aside class="">
+                <div class="user-head">
+                  <div class="user-name">
+                    <h5><a href="../../index.html">ALDOPA</a></h5>
+                    <span><a href="#">aldopa@info.com</a></span>
+                  </div>
+                </div>
+                <div class="inbox-body">
+                  <a
+                    href="#myModal"
+                    data-toggle="modal"
+                    title="Compose"
+                    class="btn btn-compose"
+                  >
+                    Üzenet írása
+                  </a>
+                  <div
+                    aria-hidden="true"
+                    aria-labelledby="myModalLabel"
+                    role="dialog"
+                    tabindex="-1"
+                    id="myModal"
+                    class="modal fade"
+                    style="display: none"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Üzenet írása</h4>
+                          <button
+                            aria-hidden="true"
+                            data-dismiss="modal"
+                            class="close"
+                            type="button"
+                          >
+                            X
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                              <div class="col-lg-12">
+                                <input
+                                  type="text"
+                                  placeholder="Címzett"
+                                  id="inputEmail1"
+                                  class="form-control cimzett"
+                                />
+                                <div class="to">To</div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-lg-12">
+                                <input
+                                  type="text"
+                                  placeholder="Tárgy"
+                                  id="inputPassword1"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <br />
+                              <div class="col-lg-12">
+                                <textarea
+                                  rows="10"
+                                  cols="30"
+                                  class="form-control"
+                                  id=""
+                                  name=""
+                                  placeholder="Üzenet"
+                                ></textarea>
+                                <span class="csatoltFajlok"></span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-lg-offset-2 col-lg-10">
+                                <span class="btn fileinput-button">
+                                  <i class="fa fa-plus fa fa-white"></i>
+                                  <span>Csatolmány</span>
+                                  <input
+                                    type="file"
+                                    name="files[]"
+                                    multiple=""
+                                  />
+                                </span>
+                                <button class="btn btn-send" type="submit">
+                                  Send
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="inbox-nav inbox-divider">
+                  <li class="active">
+                    <a href="#"
+                      ><i class="fa fa-inbox"></i> Bejövő
+                      <span class="label label-danger pull-right">
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-envelope-o"></i> Elküldött</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark-o"></i> Fontos</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-external-link"></i> Piszkozatok
+                      <span class="label label-info pull-right"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash-o"></i> Törölt</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          -->
