@@ -33,6 +33,11 @@
   border-radius: 5px;
 }
 
+#akcio{
+  font-weight: 1000;
+  color: red;
+}
+
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.582);
 
@@ -40,6 +45,7 @@
 
 .navbar-brand {
   position: absolute;
+  left: 30px;
   left: 30px;
 }
 
@@ -50,10 +56,9 @@
   color: white;
   position: absolute;
   right: 40px;
-}
-
-.container-fluid{
-width: unset;
+<<<<<<<<< Temporary merge branch 1
+} 
+=========
 }
 
 @media (max-width: 992px) {

@@ -1,10 +1,10 @@
 @import url(./szamla.css);
 @import url(./fooldal.css);
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 @import url(./uzenetek.css);
-=======
+=========
 
->>>>>>> ee771ac4b87cb5bb974cfba45f6ee5935adcb18b
+>>>>>>>>> Temporary merge branch 2
 
 body {
     background-image: url("../../imgs/header/3.jpeg");

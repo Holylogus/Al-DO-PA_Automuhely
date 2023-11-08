@@ -1,5 +1,7 @@
 header {
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -86,4 +88,21 @@ video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  /* @import url(/style/responsivehome.css); */
+video{
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+header{ min-height: 30vh;
+  max-height: 30vh;
+  background-size: contain;
+}
+nav{
+  width: 400px;
+  position: relative;
+  left: 0;
+}
 }
