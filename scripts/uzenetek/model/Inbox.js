@@ -20,14 +20,7 @@ class Inbox {
     this.#bejovoUzenetek = this.txtOsszeallit(this.#objektumok);
     szulo.html(this.#bejovoUzenetek);
   }
-  megnyitFigyel(lista) {
-    lista.each((index, element) => {
-      element.addEventListener("click", () =>
-        this.#szulo.html(this.#objektumok[index].mutat())
-      );
-    });
-  }
-  megnyitFigyel(lista) {
+  megnyitFigyel(lista){
     lista.each((index, element) => {
       element.addEventListener("click", () =>
         this.#szulo.html(this.#objektumok[index].mutat())
