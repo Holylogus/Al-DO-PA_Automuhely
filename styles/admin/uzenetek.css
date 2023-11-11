@@ -10,7 +10,6 @@ table {
   border-spacing: 0;
   display: table;
   table-layout: fixed;
-  width: 100%;
   height: 85vh;
 }
 .mail-box aside {
@@ -23,12 +22,10 @@ table {
 .mail-box .sm-side {
   background: none repeat scroll 0 0 #00000073;
   border-radius: 4px 0 0 4px;
-  width: 15%;
 }
 .mail-box .lg-side {
   background: none repeat scroll 0 0 #00000073;
   border-radius: 0 4px 4px 0;
-  width: 80%;
 }
 .mail-box .sm-side .user-head {
   background: none repeat scroll 0 0 #00000062;
@@ -39,7 +36,6 @@ table {
 }
 .user-head .inbox-avatar {
   float: left;
-  width: 65px;
 }
 .user-head .inbox-avatar img {
   border-radius: 4px;
@@ -73,12 +69,11 @@ a.mail-dropdown {
   padding: 3px 5px;
 }
 .inbox-body {
-  padding: 20px;
+  padding: 1em;
 }
 
 .inbox-body-mails {
   max-height: 69vh;
-  overflow-y: scroll;
 }
 .btn-compose {
   background: none repeat scroll 0 0 #32c74bb9;
@@ -96,7 +91,7 @@ ul.inbox-nav {
   display: inline-block;
   margin: 0;
   padding: 0;
-  width: 90%;
+  /* width: 90%; */
 }
 .inbox-divider {
   border-bottom: 1px solid #000000b4;
@@ -111,7 +106,7 @@ ul.inbox-nav li a {
   display: inline-block;
   line-height: 45px;
   padding: 0 20px;
-  width: 110%;
+  width: 100%;
   text-decoration: none;
 }
 ul.inbox-nav li a:hover,
@@ -241,12 +236,11 @@ ul.inbox-pagination li {
 .mail-option {
   display: inline-block;
   margin-bottom: 10px;
-  width: 100%;
+  /* width: 100%; */
 }
 .mail-option .chk-all,
 .mail-option .btn-group a.btn:not(.chk-all) {
   display: inline-block;
-
 }
 .mail-option .btn-group a.btn:not(.chk-all) {
   border-radius: 3px !important;
@@ -258,8 +252,6 @@ ul.inbox-pagination li {
   color: black;
   background-color: white;
 }
-
-
 
 input[type="checkbox"] {
   height: 20px;
@@ -288,8 +280,6 @@ input[type="checkbox"] {
 .mail-option .btn-group a.all {
   border: medium none;
   padding: 0;
-
-
 }
 .inbox-pagination a.np-btn {
   margin-left: 5px;
@@ -389,17 +379,17 @@ input[type="checkbox"] {
 .attachment-mail ul {
   display: inline-block;
   margin-bottom: 30px;
-  width: 100%;
+  /* width: 100%; */
 }
 .attachment-mail ul li {
   float: left;
   margin-bottom: 10px;
   margin-right: 10px;
-  width: 150px;
+  /* width: 150px; */
 }
-.attachment-mail ul li img {
+/* .attachment-mail ul li img {
   width: 100%;
-}
+} */
 .attachment-mail ul li span {
   float: right;
 }
@@ -408,7 +398,7 @@ input[type="checkbox"] {
 }
 .attachment-mail .links {
   display: inline-block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .fileinput-button {
@@ -432,9 +422,9 @@ input[type="checkbox"] {
 .fileupload-buttonbar .toggle {
   margin-bottom: 5px;
 }
-.files .progress {
+/* .files .progress {
   width: 200px;
-}
+} */
 .fileupload-processing .fileupload-loading {
   display: block;
 }
@@ -465,6 +455,14 @@ input[type="checkbox"] {
     width: 60px;
   }
 }
+@media (max-width: 715px) {
+  .bejov {
+    /* text-align: center;
+    width: 100%; */
+    display: none !important;
+    
+  }
+}
 ul {
   list-style-type: none;
   padding: 0px;
@@ -472,7 +470,7 @@ ul {
 }
 
 .form-group {
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
 }
 
@@ -502,13 +500,13 @@ ul {
   cursor: pointer;
 }
 
-.reszletekFul{
+.reszletekFul {
   cursor: pointer;
 }
-.mutat{
+.mutat {
   display: block;
 }
 
-.rejt{
+.rejt {
   display: none;
 }
