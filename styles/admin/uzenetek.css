@@ -236,10 +236,10 @@ ul.inbox-pagination li {
 .mail-option {
   display: inline-block;
   margin-bottom: 10px;
-  /* width: 100%; */
+  width: 100%;
 }
 .mail-option .chk-all,
-.mail-option .btn-group a.btn:not(.chk-all) {
+.mail-option .btn-group a.btn {
   display: inline-block;
 }
 .mail-option .btn-group a.btn:not(.chk-all) {
@@ -454,6 +454,10 @@ input[type="checkbox"] {
   .files .delete {
     width: 60px;
   }
+  .inbox-pagination li span {
+    margin: unset;
+    margin-top: 10%;
+}
 }
 @media (max-width: 715px) {
   .bejov {
