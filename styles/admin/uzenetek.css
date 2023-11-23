@@ -1,3 +1,6 @@
+body{
+  background-image: url(../../imgs/header/4.jpeg);
+}
 #uzenetekMain {
   width: auto;
   margin: 1.5em;
@@ -11,6 +14,7 @@ table {
   display: table;
   table-layout: fixed;
   height: 85vh;
+  backdrop-filter: blur(6px);
 }
 .mail-box aside {
   display: table-cell;
@@ -21,15 +25,15 @@ table {
 }
 .mail-box .sm-side {
   background: none repeat scroll 0 0 #00000073;
-  border-radius: 4px 0 0 4px;
+  border-radius: 25px 0 0 25px;
 }
 .mail-box .lg-side {
   background: none repeat scroll 0 0 #00000073;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 25px 25px 0;
 }
 .mail-box .sm-side .user-head {
   background: none repeat scroll 0 0 #00000062;
-  border-radius: 4px 0 0;
+  border-radius: 25px 0 0;
   color: #000000;
   min-height: 80px;
   padding: 10px;
@@ -38,7 +42,7 @@ table {
   float: left;
 }
 .user-head .inbox-avatar img {
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .user-head .user-name {
   display: inline-block;
@@ -156,7 +160,7 @@ ul.labels-info li a i {
 }
 .inbox-head {
   background: none repeat scroll 0 0 #515251b0;
-  border-radius: 0 4px 0 0;
+  border-radius: 0 25px 0 0;
   color: #fff;
   min-height: 80px;
   padding: 20px;
@@ -200,7 +204,8 @@ ul.labels-info li a i {
 }
 
 .table-inbox tr:hover {
-  background: none repeat scroll 0 0 #4b4b4bdc;
+  /* rgba(13, 172, 21, 0.984); */
+  background: none repeat scroll 0 0 rgb(121, 121, 121);
   margin: 0;
 }
 
@@ -212,7 +217,7 @@ ul.labels-info li a i {
   color: #d5d5d5;
 }
 .table-inbox tr.unread td {
-  background: none repeat scroll 0 0 #4b4b4bdc;
+  background: none repeat scroll 0 0 #686767b7;
   font-weight: 600;
   color: white;
 }
@@ -224,7 +229,7 @@ ul.labels-info li a i {
 .read .view-message,
 .read td {
   color: rgb(168, 167, 167) !important;
-  background-color: #000000b7;
+  background-color: #141313b7;
   font-weight: 300;
 }
 ul.inbox-pagination {
@@ -506,38 +511,39 @@ ul {
   .inbox-pagination li span {
     margin: unset;
     margin-top: 10%;
-}
-.bejov {
-  display: none !important;
-  
-}
-}
-@media (max-width: 767px) {
-  .mobilRejt{
+  }
+  .bejov {
     display: none !important;
   }
-  .fa-angle-left, .fa-angle-right{
+}
+@media (max-width: 767px) {
+  .mobilRejt {
+    display: none !important;
+  }
+  .fa-angle-left,
+  .fa-angle-right {
     font-size: 10px;
   }
-  .np-btn{
+  .np-btn {
     max-width: 10px;
     padding: 0;
   }
-  table, tbody{
+  table,
+  tbody {
     width: 100%;
     font-size: 12px;
   }
-  td{
-  max-width: 60px !important;
-  margin: 10px !important;
- }
- #uzenetekMain{
-  margin: unset;
- }
- .inbox-small-cells{
-  max-width: 20px !important;
- }
- .mail-checkbox{
-  width: 15px !important;
- }
+  td {
+    max-width: 60px !important;
+    margin: 10px !important;
+  }
+  #uzenetekMain {
+    margin: unset;
+  }
+  .inbox-small-cells {
+    max-width: 20px !important;
+  }
+  .mail-checkbox {
+    width: 15px !important;
+  }
 }
