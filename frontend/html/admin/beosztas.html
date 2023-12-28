@@ -25,14 +25,14 @@
     <!-- css -->
     <link rel="stylesheet" href="../../styles/public/style.css" />
     <link rel="stylesheet" href="../../styles/admin/adminStyle.css" />
-    <title>Al-Do-Pa | Statisztika</title>
+    <title>Al-Do-Pa | Beosztás</title>
   </head>
 
   <body>
     <header></header>
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
+        <a class="navbar-brand" href="/index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -70,8 +70,10 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="./uzenetek.html"
-                    >Üzenetek<span class="uzenetekSzama"></span
-                  ></a>
+                    >Üzenetek<span class="uzenetekSzama">
+                      <!-- hány üzenet van -->
+                    </span></a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="./statisztika.html"
@@ -140,13 +142,11 @@
                 <li><a class="dropdown-item" href="#">Műszaki vizsga</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a href="../public/login.html" class="loginUser">
-                <i class="fa-regular fa-user loginUser"></i
-              ></a>
-            </li>
           </ul>
         </div>
+        <a href="../public/login.html" class="loginUser">
+          <i class="fa-regular fa-user loginUser"></i
+        ></a>
       </div>
     </nav>
     <main>
