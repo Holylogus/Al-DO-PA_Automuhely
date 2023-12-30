@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fontawsome -->
+    
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/e618538ebf.js"
       crossorigin="anonymous"
     ></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- scripts -->
     <script src="../../scripts/main.js" type="module"></script>
     <!-- bootstrap -->
     <link
@@ -26,9 +26,13 @@
     ></script>
     <!-- css -->
     <link rel="stylesheet" href="../../styles/public/style.css" />
-    <title>Al-Do-Pa Car</title>
+    <link rel="stylesheet" href="../../styles/login/forgotPage.css" />
+    <!-- scripts -->
+    <script src="../../scripts/counter.js"></script>
+    <title>Al-Do-Pa | Forget Password</title>
   </head>
-<body>
+
+  <body>
     <header>
     </header>
 
@@ -37,7 +41,7 @@
     data-bs-theme="dark"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="../../index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
+      <a class="navbar-brand" href="/index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -110,6 +114,30 @@
     </div>
   </nav>
 
-    <main style="width: 100vw; "><p style="text-align: center; margin-top: 400px;">Az oldal szerkesztése folyamatban</p></main>
-</body>
+    <main>
+      <div class="container">
+        <div class="container2">
+          <p class="forgotP">Request new password</p>
+          <form action="">
+            <label for="fname">Email:</label><br />
+            <div class="ikonok">
+              <span class="ikon"> <i class="fa-regular fa-user"></i></span>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="example@yahoo.com"
+              /><br />
+              <span class="ido"><p id="timer"></p></span>
+            </div>
+            <button id="request">Send Code</button>
+          </form>
+          <div class="back">
+            <a href="login.html" class="backBottom">Back</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
