@@ -32,10 +32,14 @@ class PartController extends Controller
     public function update(Request $request, $id)
     {
         $part = Part::find($id);
-        $part->cikkszam = $request->cikkszam;
-        $part->megnevezes = $request->megnevezes;
-        $part->listaar = $request->listaar;
-        $part->beszallito = $request->beszallito;
+        if ($request->cikkszam !== NULL) {
+        $part->cikkszam = $request->cikkszam;}
+        if ($request->megnevezes !== NULL) {
+        $part->megnevezes = $request->megnevezes;}
+        if ($request->listaar !== NULL) {
+        $part->listaar = $request->listaar;}
+        if ($request->beszallito !== NULL) {
+        $part->beszallito = $request->beszallito;}
         $part->save();
     }
 

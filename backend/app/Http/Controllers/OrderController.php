@@ -31,8 +31,10 @@ class OrderController extends Controller
     public function update(Request $request, $id)
     {
         $order = Order::find($id);
-        $order->kelt = $request->kelt;
-        $order->osszeg = $request->osszeg;
+        if ($request->kelt !== NULL) {
+        $order->kelt = $request->kelt;}
+        if ($request->osszeg !== NULL) {
+        $order->osszeg = $request->osszeg;}
         $order->save();
     }
 

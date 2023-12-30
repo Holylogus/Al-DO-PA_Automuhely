@@ -32,9 +32,12 @@ class OrderItemController extends Controller
     public function update(Request $request, $rendeles_szam, $alkatresz)
     {
         $oi = $this->show($rendeles_szam, $alkatresz);
-        $oi->rendeles_szam = $request->rendeles_szam;
-        $oi->alkatresz = $request->alkatresz;
-        $oi->mennyiseg = $request->mennyiseg;
+        if ($request->rendeles_szam !== NULL) {
+        $oi->rendeles_szam = $request->rendeles_szam;}
+        if ($request->alkatresz !== NULL) {
+        $oi->alkatresz = $request->alkatresz;}
+        if ($request->mennyiseg !== NULL) {
+        $oi->mennyiseg = $request->mennyiseg;}
         $oi->save();
     }
 

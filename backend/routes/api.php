@@ -24,5 +24,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::resource('workers', WorkerController::class);
 Route::resource('parts', PartController::class);
-Route::resource('orderitems', OrderItemController::class);
 Route::resource('orders', OrderController::class);
+Route::get('orderitems', [OrderItemController::class, 'index']);
+Route::get('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'show']);
+Route::post('orderitems', [OrderItemController::class, 'store']);
+Route::put('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'update']);
+Route::delete('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'destroy']);

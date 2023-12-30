@@ -34,12 +34,18 @@ class WorkerController extends Controller
     public function update(Request $request, $id)
     {
         $worker = Worker::find($id);
-        $worker->adoszam = $request->adoszam;
-        $worker->vezeteknev = $request->vezeteknev;
-        $worker->keresztnev = $request->keresztnev;
-        $worker->szuletett = $request->szuletett;
-        $worker->lakcim = $request->lakcim;
-        $worker->pozicio = $request->pozicio;
+        if ($request->adoszam !== NULL) {
+        $worker->adoszam = $request->adoszam;}
+        if ($request->vezeteknev !== NULL) {
+        $worker->vezeteknev = $request->vezeteknev;}
+        if ($request->keresztnev !== NULL) {
+        $worker->keresztnev = $request->keresztnev;}
+        if ($request->szuletett !== NULL) {
+        $worker->szuletett = $request->szuletett;}
+        if ($request->lakcim !== NULL) {
+        $worker->lakcim = $request->lakcim;}
+        if ($request->pozicio !== NULL) {
+        $worker->pozicio = $request->pozicio;}
         $worker->save();
     }
 
