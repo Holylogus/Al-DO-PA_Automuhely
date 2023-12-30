@@ -10,13 +10,14 @@ class Order extends Model
     use HasFactory;
 
     protected $primaryKey = 'rendeles_szam';
-    
+
     protected $fillable = [
         'kelt',
         'osszeg',
     ];
 
-    // protected $hidden = [
-
-    // ];
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
 }

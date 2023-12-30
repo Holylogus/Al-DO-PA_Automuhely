@@ -21,8 +21,8 @@ class OrderItem extends Model
         'mennyiseg',
     ];
 
-    // protected $hidden = [
-
-    // ];
-
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
 }

@@ -22,9 +22,10 @@ class Worker extends Model
         'pozicio',
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
     public static $poziciok = ['szerelo', 'reszmunkaidos'];
-
-    // protected $hidden = [
-
-    // ];
 }

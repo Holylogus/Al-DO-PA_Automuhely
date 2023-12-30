@@ -20,10 +20,17 @@ class Part extends Model
         'beszallito'
     ];
 
-    public static $alkatreszek = ['fék', 'gumiabroncs', 'motor', 'gyújtógyertya', 'porlasztó', 'lánctalp',
-    'motorvezérlő egység', 'napellenző', 'üzemanyagszűrő', 'kormányberendezés', 'visszapillantó tükör',
-    'nyári gumi', 'téli gumi', 'sebességváltó', 'klímaberendezés', 'zárrendszer', 'üzemanyag-szállító rendszer',
-    'tengelykapcsoló', 'vonóhorog', 'kipufogó', 'szélvédő', 'elülső ablak', 'hátulsó ablak', 'fényszóró izzó',
-    'jelzőizzó', 'led', 'műszerfal világítás', 'nappali menetfény', 'autó ülés', 'keréktárcsa', 'csapágy',
-    'szivargyújtó', 'rugó'];
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
+    public static $alkatreszek = [
+        'fék', 'gumiabroncs', 'motor', 'gyújtógyertya', 'porlasztó', 'lánctalp',
+        'motorvezérlő egység', 'napellenző', 'üzemanyagszűrő', 'kormányberendezés', 'visszapillantó tükör',
+        'nyári gumi', 'téli gumi', 'sebességváltó', 'klímaberendezés', 'zárrendszer', 'üzemanyag-szállító rendszer',
+        'tengelykapcsoló', 'vonóhorog', 'kipufogó', 'szélvédő', 'elülső ablak', 'hátulsó ablak', 'fényszóró izzó',
+        'jelzőizzó', 'led', 'műszerfal világítás', 'nappali menetfény', 'autó ülés', 'keréktárcsa', 'csapágy',
+        'szivargyújtó', 'rugó'
+    ];
 }
