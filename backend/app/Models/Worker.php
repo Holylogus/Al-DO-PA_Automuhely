@@ -11,7 +11,10 @@ class Worker extends Model
 
     protected $primaryKey = 'adoszam';
 
+    public $incrementing = false;
+
     protected $fillable = [
+        'adoszam',
         'vezeteknev',
         'keresztnev',
         'szuletett',
