@@ -13,7 +13,7 @@ class OrderItem extends Model
     {
         $query
             ->where('rendeles_szam', '=', $this->getAttribute('rendeles_szam'))
-            ->where('alkatresz', '=', $this->getAttribute('cikkszam'));
+            ->where('alkatresz', '=', $this->getAttribute('alkatresz'));
         return $query;
     }
 

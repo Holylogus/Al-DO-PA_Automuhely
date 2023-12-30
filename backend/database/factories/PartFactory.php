@@ -18,9 +18,9 @@ class PartFactory extends Factory
     public function definition(): array
     {
         return [
-            'megnevezes' =>fake()->array_rand(Part::$alkatreszek),
-            'listaar'=>fake('hu_HU')->random_int(8999, 600000),
-            'beszallito'=>fake('hu_HU')->company(),
+            'megnevezes' => fake()->randomElement(Part::$alkatreszek),
+            'listaar' => rand(8999, 600000),
+            'beszallito' => fake('hu_HU')->company(),
         ];
     }
 }

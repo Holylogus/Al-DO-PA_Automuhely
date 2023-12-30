@@ -21,8 +21,8 @@ class OrderItemFactory extends Factory
     {
         $repeats = 10;
         do {
-            $rendeles_szam = Order::all()->random()->id;
-            $alkatresz = Part::all()->random()->alkatresz;
+            $rendeles_szam = Order::all()->random()->rendeles_szam;
+            $alkatresz = Part::all()->random()->cikkszam;
 
             $orderItem = OrderItem::where('rendeles_szam', $rendeles_szam)
                 ->where('alkatresz', $alkatresz)
@@ -33,7 +33,7 @@ class OrderItemFactory extends Factory
         return [
             'rendeles_szam' => $rendeles_szam,
             'alkatresz' => $alkatresz,
-            'mennyiseg' => random_int(1, 4),
+            'mennyiseg' => rand(1, 4),
         ];
     }
 }

@@ -18,7 +18,7 @@ class OrderFactory extends Factory
     {
         return [
             'kelt' => fake('hu_HU')->date(),
-            'osszeg' => random_int(8999, 600000),
+            'osszeg' => rand(8999, 600000),
         ];
     }
 }

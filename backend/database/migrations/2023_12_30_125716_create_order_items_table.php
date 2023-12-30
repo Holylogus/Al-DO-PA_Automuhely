@@ -15,7 +15,7 @@ return new class extends Migration
             $table->primary(['rendeles_szam', 'alkatresz']);
             $table->foreignId('rendeles_szam')->references('rendeles_szam')->on('orders');
             $table->foreignId('alkatresz')->references('cikkszam')->on('parts');
-            $table->bigInteger('osszeg');
+            $table->integer('mennyiseg');
             $table->timestamps();
         });
     }

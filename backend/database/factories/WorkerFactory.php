@@ -22,7 +22,7 @@ class WorkerFactory extends Factory
             'keresztnev' => fake('hu_HU')->lastName(),
             'szuletett' => fake('hu_HU')->dateTimeBetween('1960-01-01', '2004-01-01'),
             'lakcim' => fake('hu_HU')->address(),
-            'pozicio' => fake()->array_rand(Worker::$poziciok),
+            'pozicio' => fake()->randomElement(Worker::$poziciok),
         ];
     }
 }
