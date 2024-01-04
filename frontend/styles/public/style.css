@@ -1,0 +1,39 @@
+@import url(./menu.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html{
+  height: 100%;
+}
+
+
+/* Small devices such as large phones (640px and up) */
+
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 1279px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1281px) {
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+footer{
+  text-align: center;
+}
