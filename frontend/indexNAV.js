@@ -6,7 +6,7 @@ let txt =
       data-bs-theme="dark"
     >
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
+          <a class="navbar-brand" href="./index.html">𝙰𝙻𝙳𝙾𝙿𝙰</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -83,8 +83,7 @@ let txt =
         </div>
       </nav>
       <video autoplay controls loop muted>
-        <source src="../html/public/html/imgs/header/headerVideo3.mp4" />
-        <!-- <source src="./html/public/imgs/header/headerVideo.mp4" /> -->
+        <source src="../frontend/imgs/header/headerVideo3.mp4" />
       </video>
 `
 
