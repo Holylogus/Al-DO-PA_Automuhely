@@ -83,7 +83,7 @@ let txt =
         </div>
       </nav>
       <video autoplay controls loop muted>
-        <source src="../frontend/imgs/header/headerVideo3.mp4" />
+        <source src="./imgs/header/headerVideo3.mp4" />
       </video>
 `
 
