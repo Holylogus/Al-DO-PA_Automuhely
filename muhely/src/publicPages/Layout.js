@@ -14,9 +14,10 @@ export default function Layout() {
             <Nav className="me-auto">
               <Nav.Link href="/home">Főoldal</Nav.Link>
               <Nav.Link href="/admin">Admin</Nav.Link>
-              <Nav.Link href="/uzenetek">Uzenetek</Nav.Link>
+              <Nav.Link href="/uzenetek">Üzenetek</Nav.Link>
               <Nav.Link href="/folyamatban">Folyamatban</Nav.Link>
-              <Nav.Link href="/szamla">Szamla</Nav.Link>
+              <Nav.Link href="/szamla">Számla</Nav.Link>
+              <Nav.Link href="/naptar">Naptár</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

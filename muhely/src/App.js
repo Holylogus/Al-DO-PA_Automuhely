@@ -7,6 +7,7 @@ import Home from "./publicPages/Home";
 import NoPage from "./publicPages/NoPage";
 import Layout from "./publicPages/Layout";
 import Folyamatban from "./adminPages/Folyamatban";
+import Naptar from "./adminPages/Naptar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="uzenetek" element={<Uzenetek />} />
           <Route path="folyamatban" element={<Folyamatban />} />
           <Route path="szamla" element={<Szamla />} />
+          <Route path="naptar" element={<Naptar />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
