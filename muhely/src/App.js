@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Admin from "./admin/Admin";
-import Uzenetek from "./admin/Uzenetek";
-import Szamla from "./admin/Szamla";
-import Home from "./public/Home";
-import NoPage from "./public/NoPage";
-import Layout from "./public/Layout";
+import Admin from "./adminPages/Admin";
+import Uzenetek from "./adminPages/Uzenetek";
+import Szamla from "./adminPages/Szamla";
+import Home from "./publicPages/Home";
+import NoPage from "./publicPages/NoPage";
+import Layout from "./publicPages/Layout";
 
 function App() {
   return (

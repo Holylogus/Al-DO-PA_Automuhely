@@ -1,0 +1,42 @@
+export const szamlak = [
+  {
+    Dátum: "2023.10.29",
+    Idő: "13:01",
+    Ügyfél: "Szlucska Dóra",
+    Ügyfél_id: "123456789",
+    Költség: "1.542.999",
+    Fájlnév: "download.pdf",
+  },
+  {
+    Dátum: "2023.10.28",
+    Idő: "13:01",
+    Ügyfél: "Tóth Alexandra",
+    Ügyfél_id: "123456789",
+    Költség: "1.542.999",
+    Fájlnév: "download.pdf",
+  },
+  {
+    Dátum: "2023.10.27",
+    Idő: "13:01",
+    Ügyfél: "Hamar Patrik",
+    Ügyfél_id: "123456789",
+    Költség: "1.542.999",
+    Fájlnév: "download.pdf",
+  },
+  {
+    Dátum: "2023.10.26",
+    Idő: "13:01",
+    Ügyfél: "Nagy Sándor",
+    Ügyfél_id: "123456789",
+    Költség: "1.542.999",
+    Fájlnév: "download.pdf",
+  },
+  {
+    Dátum: "2023.10.25",
+    Idő: "13:01",
+    Ügyfél: "Kovács József",
+    Ügyfél_id: "123456789",
+    Költség: "1.542.999",
+    Fájlnév: "download.pdf",
+  },
+];
