@@ -1,7 +1,7 @@
 export default function Uzenetek() {
   return (
     <>
-      <div>Az oldal szerkesztése folyamatban</div>
+      <div className="adminUzenetek">Az oldal szerkesztése folyamatban</div>
     </>
   );
 }

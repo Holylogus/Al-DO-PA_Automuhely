@@ -1,9 +1,10 @@
 import Nav from 'react-bootstrap/Nav';
+import "./styles/adminStyle.css"
 
 export default function Admin() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid admin">
         <div className="row">
           <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div className="card">
