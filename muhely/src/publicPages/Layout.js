@@ -15,6 +15,7 @@ export default function Layout() {
               <Nav.Link href="/home">Főoldal</Nav.Link>
               <Nav.Link href="/admin">Admin</Nav.Link>
               <Nav.Link href="/uzenetek">Uzenetek</Nav.Link>
+              <Nav.Link href="/folyamatban">Folyamatban</Nav.Link>
               <Nav.Link href="/szamla">Szamla</Nav.Link>
             </Nav>
           </Navbar.Collapse>

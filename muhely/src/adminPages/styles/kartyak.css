@@ -1,0 +1,19 @@
+.card {
+  padding-bottom: 3em;
+}
+
+.card i {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  font-size: 6vh;
+}
+
+.card a {
+  color: rgb(68, 65, 65);
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: rgb(23, 118, 207);
+}

@@ -6,6 +6,7 @@ import Szamla from "./adminPages/Szamla";
 import Home from "./publicPages/Home";
 import NoPage from "./publicPages/NoPage";
 import Layout from "./publicPages/Layout";
+import Folyamatban from "./adminPages/Folyamatban";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="admin" element={<Admin />} />
           <Route path="uzenetek" element={<Uzenetek />} />
+          <Route path="folyamatban" element={<Folyamatban />} />
           <Route path="szamla" element={<Szamla />} />
           <Route path="*" element={<NoPage />} />
         </Route>
