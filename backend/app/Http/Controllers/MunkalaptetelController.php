@@ -2,30 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\OrderItem;
+use App\Models\Munkalaptetel;
 use Illuminate\Http\Request;
 
-class OrderItemController extends Controller
+class MunkalaptetelController extends Controller
 {
     public function index()
     {
-        $ois = response()->json(OrderItem::all());
+        $ois = response()->json(Munkalaptetel::all());
         return $ois;
     }
 
     public function show($rendeles_szam, $alkatresz)
     {
-        $oi = OrderItem::where('rendeles_szam', $rendeles_szam)
+        $oi = Munkalaptetel::where('rendeles_szam', $rendeles_szam)
             ->where('alkatresz', $alkatresz)
             ->first();
         return $oi;
     }
     public function store(Request $request)
     {
-        $oi = new OrderItem();
-        $oi->rendeles_szam = $request->rendeles_szam;
-        $oi->alkatresz = $request->alkatresz;
-        $oi->mennyiseg = $request->mennyiseg;
+        $oi = new Munkalaptetel();
+        $oi->fill($request->all());
         $oi->save();
     }
 

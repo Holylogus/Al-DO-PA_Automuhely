@@ -4,10 +4,11 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Order;
-use App\Models\OrderItem;
-use App\Models\Part;
-use App\Models\Worker;
+use App\Models\Munkalap;
+use App\Models\Alkatresz;
+use App\Models\Dolgozo;
+use App\Models\Munkalaptetel;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,9 +18,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Worker::factory(10)->create();
-        Part::factory(30)->create();
-        Order::factory(10)->create();
-        OrderItem::factory(10)->create();
+        User::factory(10)->create();
+        Dolgozo::factory(10)->create();
+        Alkatresz::factory(30)->create();
+        Munkalap::factory(10)->create();
+        Munkalaptetel::factory(5)->create();
     }
 }

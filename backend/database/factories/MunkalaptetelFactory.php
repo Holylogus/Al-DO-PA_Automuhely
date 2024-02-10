@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
-use App\Models\Order;
-use App\Models\OrderItem;
-use App\Models\Part;
+use App\Models\Munkalap;
+use App\Models\Munkalaptetel;
+use App\Models\Alkatresz;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\OrderItem>
  */
-class OrderItemFactory extends Factory
+class MunkalaptetelFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -21,10 +21,10 @@ class OrderItemFactory extends Factory
     {
         $repeats = 10;
         do {
-            $rendeles_szam = Order::all()->random()->rendeles_szam;
-            $alkatresz = Part::all()->random()->cikkszam;
+            $rendeles_szam = Munkalap::all()->random()->rendeles_szam;
+            $alkatresz = Alkatresz::all()->random()->cikkszam;
 
-            $orderItem = OrderItem::where('rendeles_szam', $rendeles_szam)
+            $orderItem = Munkalaptetel::where('rendeles_szam', $rendeles_szam)
                 ->where('alkatresz', $alkatresz)
                 ->get();
             $repeats--;

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Worker extends Model
+class Dolgozo extends Model
 {
     use HasFactory;
 
@@ -15,14 +15,17 @@ class Worker extends Model
 
     protected $fillable = [
         'adoszam',
-        'vezeteknev',
-        'keresztnev',
+        'nev',
+        'email',
         'szuletett',
         'lakcim',
         'pozicio',
+        'jogosultsag',
+        'password'
     ];
 
     protected $hidden = [
+        'password',
         'created_at',
         'updated_at',
     ];

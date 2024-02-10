@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('parts', function (Blueprint $table) {
-            $table->id('cikkszam');
-            $table->string('megnevezes');
-            $table->bigInteger('listaar');
-            $table->string('beszallito');
+        Schema::create('munkalaps', function (Blueprint $table) {
+            $table->id('rendeles_szam');
+            $table->date('kelt');
+            $table->bigInteger('osszeg');
             $table->timestamps();
         });
     }
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('parts');
+        Schema::dropIfExists('munkalaps');
     }
 };

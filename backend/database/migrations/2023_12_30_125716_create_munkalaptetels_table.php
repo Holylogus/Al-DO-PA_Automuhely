@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('order_items', function (Blueprint $table) {
+        Schema::create('munkalaptetels', function (Blueprint $table) {
             $table->primary(['rendeles_szam', 'alkatresz']);
-            $table->foreignId('rendeles_szam')->references('rendeles_szam')->on('orders');
-            $table->foreignId('alkatresz')->references('cikkszam')->on('parts');
+            $table->foreignId('rendeles_szam')->references('rendeles_szam')->on('munkalaps');
+            $table->foreignId('alkatresz')->references('cikkszam')->on('alkatreszs');
             $table->integer('mennyiseg');
             $table->timestamps();
         });
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('order_items');
+        Schema::dropIfExists('munkalaptetels');
     }
 };
