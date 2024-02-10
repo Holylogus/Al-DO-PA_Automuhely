@@ -12,7 +12,7 @@ export default function Layout() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home">Főoldal</Nav.Link>
+              <Nav.Link href="/">Főoldal</Nav.Link>
               <Nav.Link href="/admin">Admin</Nav.Link>
               <Nav.Link href="/uzenetek">Üzenetek</Nav.Link>
               <Nav.Link href="/folyamatban">Folyamatban</Nav.Link>
