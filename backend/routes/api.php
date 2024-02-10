@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\OrderItemController;
-use App\Http\Controllers\PartController;
-use App\Http\Controllers\WorkerController;
+use App\Http\Controllers\MunkalapController;
+use App\Http\Controllers\MunkalaptetelController;
+use App\Http\Controllers\AlkatreszController;
+use App\Http\Controllers\DolgozoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,15 +18,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:basic')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('workers', WorkerController::class);
-Route::resource('parts', PartController::class);
-Route::resource('orders', OrderController::class);
-Route::get('orderitems', [OrderItemController::class, 'index']);
-Route::get('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'show']);
-Route::post('orderitems', [OrderItemController::class, 'store']);
-Route::put('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'update']);
-Route::delete('orderitems/{rendeles_szam}/{alkatresz}', [OrderItemController::class, 'destroy']);
+Route::middleware('auth.basic')->group(function () {
+
+    //csak az admin éri el:
+    Route::middleware('auth.basic')->group(function () {
+        Route::resource('dolgozok', DolgozoController::class);
+        Route::resource('alkatreszek', AlkatreszController::class);
+        Route::resource('munkalapok', MunkalapController::class);
+        Route::get('munkalaptetelek', [MunkalaptetelController::class, 'index']);
+        Route::get('munkalaptetelek/{rendeles_szam}/{alkatresz}', [MunkalaptetelController::class, 'show']);
+        Route::post('munkalaptetelek', [MunkalaptetelController::class, 'store']);
+        Route::put('munkalaptetelek/{rendeles_szam}/{alkatresz}', [MunkalaptetelController::class, 'update']);
+        Route::delete('munkalaptetelek/{rendeles_szam}/{alkatresz}', [MunkalaptetelController::class, 'destroy']);
+    });
+});
