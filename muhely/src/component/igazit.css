@@ -1,0 +1,11 @@
+.balra, .jobbra{
+    display: block;
+  
+}
+.balra{
+    color: red !important;
+}
+
+.jobbra{
+    color: blue !important;
+}

@@ -8,6 +8,9 @@ export default function Home() {
     <div className="myHeader"><video autoPlay controls loop muted>
         <source src="/images/header/headerVideo3.mp4" />
       </video></div>
+      <div className="blockelem">
+
+      
       <div className="containers">
         <div className="container">
           <img src="/images/szolgaltatasok/Akkumulator_csere.jpg" alt="Avatar" className="image" />
@@ -79,6 +82,8 @@ export default function Home() {
           </div>  
         </div>
         
+      </div>
+      
       </div>
     </>
   );
