@@ -8,6 +8,7 @@ import NoPage from "./publicPages/NoPage";
 import Layout from "./publicPages/Layout";
 import Folyamatban from "./adminPages/Folyamatban";
 import Naptar from "./adminPages/Naptar";
+import Akciok from "./publicPages/Akciok";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="folyamatban" element={<Folyamatban />} />
           <Route path="szamla" element={<Szamla />} />
           <Route path="naptar" element={<Naptar />} />
+          <Route path="akciok" element={<Akciok />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
