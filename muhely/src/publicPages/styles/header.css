@@ -17,13 +17,10 @@ video {
 }
 @media only screen and (max-width: 767px) {
   /* @import url(/style/responsivehome.css); */
-video{
-  object-fit: contain;
-  width: auto;
-  height: auto;
-}
-.myHeader{ min-height: 30vh;
-  max-height: 30vh;
-  background-size: contain;
-}
+  video{
+    object-fit: contain;
+    width: auto;
+    height: auto;
+  }
+ 
 }
