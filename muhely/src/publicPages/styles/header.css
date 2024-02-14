@@ -1,0 +1,42 @@
+.myHeader {
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+video {
+  pointer-events: none;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  /* @import url(/style/responsivehome.css); */
+video{
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+.myHeader{ min-height: 30vh;
+  max-height: 30vh;
+  background-size: contain;
+}
+nav{
+  width: 400px;
+  position: relative;
+  left: 0;
+}
+}

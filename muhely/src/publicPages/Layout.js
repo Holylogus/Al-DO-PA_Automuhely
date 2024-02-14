@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Layout() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary" style={{height: '5vh'}}>
         <Container>
           <Navbar.Brand href="/">ALDOPA</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
