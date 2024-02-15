@@ -1,22 +1,16 @@
-.myHeader {
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
 video::-webkit-media-controls-panel {
-  display: none !important;
-  opacity: 1 !important;
+  display: none;
 }
 
 video {
   pointer-events: none;
   width: 100vw;
-  height: 100vh;
+  height:95vh;
   object-fit: cover;
+  position: relative;
+  z-index: -1;
 }
 @media only screen and (max-width: 767px) {
-  /* @import url(/style/responsivehome.css); */
   video{
     object-fit: contain;
     width: auto;
