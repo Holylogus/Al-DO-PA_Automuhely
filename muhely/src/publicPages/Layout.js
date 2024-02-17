@@ -19,6 +19,7 @@ export default function Layout() {
               <Nav.Link href="/folyamatban">Folyamatban</Nav.Link>
               <Nav.Link href="/szamla">Számla</Nav.Link>
               <Nav.Link href="/naptar">Naptár</Nav.Link>
+              <Nav.Link href="/login">Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

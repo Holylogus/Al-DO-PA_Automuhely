@@ -1,0 +1,7 @@
+body {
+  background-image: url("/public/images/header/0.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}

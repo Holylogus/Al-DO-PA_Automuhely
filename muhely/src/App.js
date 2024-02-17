@@ -9,6 +9,7 @@ import Layout from "./publicPages/Layout";
 import Folyamatban from "./adminPages/Folyamatban";
 import Naptar from "./adminPages/Naptar";
 import Akciok from "./publicPages/Akciok";
+import Login from "./publicPages/Login";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="szamla" element={<Szamla />} />
           <Route path="naptar" element={<Naptar />} />
           <Route path="akciok" element={<Akciok />} />
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
