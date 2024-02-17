@@ -20,17 +20,18 @@ return new class extends Migration
             $table->string('password');
             // 0: admin, 1: felhasználó
             $table->boolean('jogosultsag')->default(1);
+            $table->string('api_token', 60)->nullable(); // specify the length also
             $table->rememberToken();
             $table->timestamps();
         });
         User::create(
             [
                 'nev' => 'admin',
-                'email'=> 'admin@gmail.com',
+                'email' => 'admin@gmail.com',
                 'jogosultsag' => '0',
                 'password' => 'admin',
             ]
-            );
+        );
     }
 
     /**

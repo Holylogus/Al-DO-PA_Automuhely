@@ -6,14 +6,12 @@ import Container from "react-bootstrap/esm/Container";
 export default function Login() {
   return (
     <Container>
-
       <Col sm={5} style={{ margin: "10em auto", color: "white", backgroundColor: "rgb(56,46,46)", padding: "5em"}}>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
-
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" />
