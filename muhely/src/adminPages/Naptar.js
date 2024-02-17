@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 const ma = new Date();
 const honap = ma.getMonth() + 1;
-const ev = ma.getFullYear();
+const honapNeve = ma.toLocaleString('hu-HU', { month: 'long' }).toUpperCase();
 const nap = ma.getDate();
 var hanyadikHet;
 if (nap / 7 >= 1) {
@@ -13,24 +13,15 @@ if (nap / 7 >= 1) {
 } else {
   hanyadikHet = honap;
 }
-var maiDatum;
-if (honap / 10 < 1) {
-  maiDatum = ev + "/0" + honap + "/" + nap;
-} else {
-  maiDatum = ev + "/" + honap + "/" + nap;
-}
 
 export default function Naptar() {
-  return (
-    <Container fluid>
+  return (<>
+    <Container style={{ backgroundColor: "white", margin: "10em auto", padding: "5em" }}>
+      <Col style={{margin:"auto auto"}} sm={12}>{honapNeve}</Col>
       <Row>
-        <Col>{maiDatum}</Col>
-        <Col>{hanyadikHet}. hét</Col>
-
-        <Row>
           <Beosztas het={hanyadikHet}></Beosztas>
-        </Row>
       </Row>
     </Container>
+  </>
   );
 }

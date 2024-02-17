@@ -1,6 +1,4 @@
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Table from "react-bootstrap/Table";
 
 export default function Beosztas(props) {
   const beosztasok = [
@@ -96,16 +94,14 @@ export default function Beosztas(props) {
     ],
   ];
 
-  return (
-    <Row>
-      {beosztasok[props.het - 1].map((napok, nap) => (
-        <Col key={nap}>
-          <h3>{napok.hetNapja}</h3>
-          {napok.emberek.map((ember, xy) => (
-            <p key={xy}>{ember}</p>
-          ))}
-        </Col>
-      ))}
-    </Row>
-  );
+  return beosztasok[props.het - 1].map((napok, nap) => {
+    return (
+      <Col key={nap}>
+        <h3>{napok.hetNapja}</h3>
+        {napok.emberek.map((ember, xy) => (
+          <p key={xy}>{ember}</p>
+        ))}
+      </Col>
+    );
+  });
 }

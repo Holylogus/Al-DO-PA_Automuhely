@@ -1,16 +1,9 @@
 @import url("./kartyak.css");
 @import url("./uzenetek.css");
 
-.admin {
-  background-image: url("/public/images/header/3.jpeg");
-}
-
-.szamla {
-  background-image: url("/public/images/header/3.jpeg");
-}
-
 .admin,
 .szamla {
+  background-image: url("/public/images/header/3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;

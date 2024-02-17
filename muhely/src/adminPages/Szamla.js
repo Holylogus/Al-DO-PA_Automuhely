@@ -9,36 +9,38 @@ export default function SzamlaTablazat() {
 
   return (
     <Container fluid className="szamla">
-      <Table striped hover size="sm" variant="dark">
-        <thead>
-          <tr>
-            {fejlec.map((e, i) => {
+      <Container>
+        <Table striped hover variant="dark">
+          <thead>
+            <tr>
+              {fejlec.map((e, i) => {
+                return (
+                  <th key={i} style={{ textAlign: "center" }}>
+                    {e}
+                  </th>
+                );
+              })}
+              <th style={{ width: "1em" }}>Letöltés</th>
+            </tr>
+          </thead>
+          <tbody>
+            {lista.map((obj, i) => {
               return (
-                <th key={i} style={{ textAlign: "center" }}>
-                  {e}
-                </th>
+                <tr key={i}>
+                  {Object.keys(obj).map((keyName, k) => (
+                    <td key={k} style={{ textAlign: "center" }}>
+                      {obj[keyName]}
+                    </td>
+                  ))}
+                  <td>
+                    <i className="fa-regular fa-circle-down"></i>
+                  </td>
+                </tr>
               );
             })}
-            <th style={{ width: "1em" }}>Letöltés</th>
-          </tr>
-        </thead>
-        <tbody>
-          {lista.map((obj, i) => {
-            return (
-              <tr key={i}>
-                {Object.keys(obj).map((keyName, k) => (
-                  <td key={k} style={{ textAlign: "center" }}>
-                    {obj[keyName]}
-                  </td>
-                ))}
-                <td>
-                  <i className="fa-regular fa-circle-down"></i>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </Table>
+          </tbody>
+        </Table>
+      </Container>
     </Container>
   );
 }

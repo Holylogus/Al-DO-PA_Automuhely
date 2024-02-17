@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card";
-import "./igazit.css"
 
 export default function Kartya(props) {
   return (
