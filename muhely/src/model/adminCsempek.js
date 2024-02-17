@@ -15,7 +15,7 @@ export const lista = [
     ikon: "fa-solid fa-chart-line",
   },
   {
-    link: "/beosztas",
+    link: "/naptar",
     szoveg: "Beosztás",
     ikon: "fa-regular fa-calendar-days",
   },
