@@ -11,6 +11,7 @@ class Auto extends Model
     protected $primatyKey = 'alvazszam';
 
     protected $fillable = [
+        'alvazszam',
         'marka',
         'motorkod',
         'gyartasiEv',

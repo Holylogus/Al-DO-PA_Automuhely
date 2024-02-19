@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('autos', function (Blueprint $table) {
-            $table->string('alvazszam');
-            $table->primary('alvazszam');
+            $table->string('alvazszam')->primary();
             $table->string('marka');
             $table->string('motorkod');
             $table->integer('gyartasiEv');
