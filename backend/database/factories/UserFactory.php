@@ -24,7 +24,11 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'nev' => fake()->name(),
+            'vezetekNev' => fake()->name(),
+            'keresztNev' => fake()->name(),
+            'szuletesiIdo' => fake()->date($min=1980, $max='now'),
+            'lakcím' => fake()->address(),
+            'telefonszam' => fake()->phoneNumber(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'jogosultsag' => 1,
