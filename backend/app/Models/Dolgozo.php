@@ -14,14 +14,10 @@ class Dolgozo extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'adoszam',
         'nev',
-        'email',
-        'szuletett',
+        'szuletesiIdo',
         'lakcim',
-        'pozicio',
         'jogosultsag',
-        'password'
     ];
 
     protected $hidden = [

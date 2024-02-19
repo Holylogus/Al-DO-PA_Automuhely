@@ -23,13 +23,9 @@ class DolgozoFactory extends Factory
     {
         return [
             'nev' => fake('hu_HU')->name(),
-            'szuletett' => fake('hu_HU')->dateTimeBetween('1960-01-01', '2004-01-01'),
+            'szuletesiIdo' => fake('hu_HU')->dateTimeBetween('1960-01-01', '2004-01-01'),
             'lakcim' => fake('hu_HU')->address(),
             'jogosultsag' => 0,
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'pozicio' => fake()->randomElement(Dolgozo::$poziciok),
-            'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
         ];
     }
