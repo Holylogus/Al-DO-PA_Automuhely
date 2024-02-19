@@ -13,12 +13,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dolgozos', function (Blueprint $table) {
-            $table->id('adoszam');
+            $table->bigInteger('adoszam');
             $table->string('nev');
             $table->date('szuletesiIdo');
             $table->string('lakcim');
-            $table->integer('pozicio');
-            $table->boolean('jogosultsag');
+            $table->string('pozicio');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -28,12 +27,11 @@ return new class extends Migration
 
         Dolgozo::create(
             [
-                'adoszam' => '3123123123',
+                'adoszam' => 77777777,
                 'nev' => 'admin',
                 'szuletesiIdo' => '2000-12-02 06:00',
                 'lakcim' => '123 teszt...',
-                'pozicio' => '0',
-                'jogosultsag' => '0',
+                'pozicio' => 'admin',
                 'email'=> 'admin@gmail.com',
                 'password' => 'admin',
             ]

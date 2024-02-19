@@ -13,10 +13,8 @@ return new class extends Migration
     {
         Schema::create('autos', function (Blueprint $table) {
             $table->string('alvazszam');
-            $table->date('erkezesiIdo');
-            $table->string('rendszam');
-            $table->foreignId('ugyfel')->references('id')->on('users');
-            $table->primary(['alvazszam','erkezesiIdo']);
+            $table->primary('alvazszam');
+            $table->string('marka');
             $table->string('motorkod');
             $table->integer('gyartasiEv');
             $table->integer('gyartasiHo');

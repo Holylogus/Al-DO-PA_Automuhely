@@ -11,11 +11,14 @@ class Auto extends Model
     protected $primatyKey = 'alvazszam';
 
     protected $fillable = [
-        'erkezesiIdo',
-        'rendszam',
-        'ugyfel',
+        'marka',
         'motorkod',
         'gyartasiEv',
         'gyartasiHo'
+    ];
+
+    public static $markak = [
+        'Opel','Ford','BMW','KIA','Citroen','Renault',
+        'Suzuki','Honda','Toyota','Mazda','Volskwagen'
     ];
 }

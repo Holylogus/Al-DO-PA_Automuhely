@@ -14,11 +14,11 @@ class Dolgozo extends Model
     public $incrementing = false;
 
     protected $fillable = [
+        'adoszam',
         'nev',
         'szuletesiIdo',
         'lakcim',
         'pozicio',
-        'jogosultsag',
         'email',
         'password'
     ];
@@ -29,5 +29,5 @@ class Dolgozo extends Model
         'updated_at',
     ];
 
-    public static $poziciok = ['szerelo', 'reszmunkaidos'];
+    public static $poziciok = ['admin','vezetoSzerelo', 'szerelo', 'recepcios'];
 }

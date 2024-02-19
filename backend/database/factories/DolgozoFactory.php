@@ -22,11 +22,11 @@ class DolgozoFactory extends Factory
     public function definition(): array
     {
         return [
+            'adoszam'=>fake()->numerify('########'),
             'nev' => fake('hu_HU')->name(),
             'szuletesiIdo' => fake('hu_HU')->dateTimeBetween('1960-01-01', '2004-01-01'),
             'lakcim' => fake('hu_HU')->address(),
-            'pozicio' =>fake()->numberBetween(0,2),
-            'jogosultsag' => 0,
+            'pozicio' =>fake()->randomElement(Dolgozo::$poziciok),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
