@@ -20,7 +20,7 @@ class FeladatTipusFactory extends Factory
     {
         return [
             'megnevezes' => fake()->randomElement(FeladatTipus::$feladatTipusok),
-            'munkadij' => fake()->randomNumber(3500,100000)
+            'munkadij' => fake()->numberBetween(3500,100000)
         ];
     }
 }

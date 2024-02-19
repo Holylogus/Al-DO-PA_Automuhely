@@ -26,7 +26,7 @@ class UserFactory extends Factory
         return [
             'vezetekNev' => fake()->name(),
             'keresztNev' => fake()->name(),
-            'szuletesiIdo' => fake()->date($min=1980, $max='now'),
+            'szuletesiIdo' => fake()->date(),
             'lakcím' => fake()->address(),
             'telefonszam' => fake()->phoneNumber(),
             'email' => fake()->unique()->safeEmail(),
