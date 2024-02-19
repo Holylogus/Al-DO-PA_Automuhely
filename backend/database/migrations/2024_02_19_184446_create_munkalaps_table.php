@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('munkalaps', function (Blueprint $table) {
             $table->id('munkalapSzam');
-            $table->foreignId('auto')->references('alvazszam')->on('autos');
+            $table->foreignId('kocsi')->references('alvazszam')->on('autos');
             $table->date('erkezesiIdo');
             $table->string('leiras')->nullable();
             $table->foreignId('ugyfel')->references('id')->on('users');

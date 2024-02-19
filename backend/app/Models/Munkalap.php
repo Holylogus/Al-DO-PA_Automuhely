@@ -10,7 +10,7 @@ class Munkalap extends Model
     use HasFactory;
     protected $primaryKey = 'munkalapSzam';
     protected $fillable = [
-        'auto',
+        'kocsi',
         'erkezesiIdo',
         'leiras',
         'ugyfel',
