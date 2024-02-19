@@ -25,6 +25,7 @@ class DolgozoFactory extends Factory
             'nev' => fake('hu_HU')->name(),
             'szuletesiIdo' => fake('hu_HU')->dateTimeBetween('1960-01-01', '2004-01-01'),
             'lakcim' => fake('hu_HU')->address(),
+            'pozició' =>fake()->numberBetween(0,2),
             'jogosultsag' => 0,
             'remember_token' => Str::random(10),
         ];

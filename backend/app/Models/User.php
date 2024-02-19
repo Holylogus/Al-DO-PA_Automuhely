@@ -24,6 +24,7 @@ class User extends Authenticatable
         'lakcím',
         'telefonszam',
         'email',
+        'password'
     ];
 
     /**

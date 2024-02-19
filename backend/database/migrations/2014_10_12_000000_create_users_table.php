@@ -30,7 +30,11 @@ return new class extends Migration
         });
         User::create(
             [
-                'nev' => 'admin',
+                'vezetekNev' => 'admin',
+                'keresztNev' => 'admin',
+                'szuletesiIdo' => '1994.10.14',
+                'lakcím'=> '2354 Kukac Giliszta utca 14.',
+                'telefonszam'=> '2354 Kukac Giliszta utca 14.',
                 'email' => 'admin@gmail.com',
                 'jogosultsag' => '0',
                 'password' => 'admin',

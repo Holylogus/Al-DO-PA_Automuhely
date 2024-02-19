@@ -17,7 +17,10 @@ class Dolgozo extends Model
         'nev',
         'szuletesiIdo',
         'lakcim',
+        'pozicio',
         'jogosultsag',
+        'email',
+        'password'
     ];
 
     protected $hidden = [

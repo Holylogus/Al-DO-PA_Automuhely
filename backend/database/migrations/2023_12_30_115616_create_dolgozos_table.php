@@ -15,9 +15,9 @@ return new class extends Migration
         Schema::create('dolgozos', function (Blueprint $table) {
             $table->id('adoszam');
             $table->string('nev');
-            $table->date('szuletett');
+            $table->date('szuletesiIdo');
             $table->string('lakcim');
-            $table->string('pozicio');
+            $table->integer('pozicio');
             $table->boolean('jogosultsag');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -30,11 +30,11 @@ return new class extends Migration
             [
                 'adoszam' => '3123123123',
                 'nev' => 'admin',
-                'email'=> 'admin@gmail.com',
-                'szuletett' => '2000-12-02 06:00',
+                'szuletesiIdo' => '2000-12-02 06:00',
                 'lakcim' => '123 teszt...',
-                'pozicio' => 'admin',
+                'pozicio' => '0',
                 'jogosultsag' => '0',
+                'email'=> 'admin@gmail.com',
                 'password' => 'admin',
             ]
             );
