@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('keresztNev');
             $table->date('szuletesiIdo');
             $table->string('lakcím');
-            $table->string('telefonszam');
+            $table->string('telefonszam')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
