@@ -29,5 +29,5 @@ class Dolgozo extends Model
         'updated_at',
     ];
 
-    public static $poziciok = ['admin','vezetoSzerelo', 'szerelo', 'recepcios'];
+    public static $poziciok = ['vezetoSzerelo', 'szerelo', 'recepcios'];
 }

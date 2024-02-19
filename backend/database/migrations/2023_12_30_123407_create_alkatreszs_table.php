@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('azonosito');
             $table->string('megnevezes');
             $table->bigInteger('listaar');
-            $table->string('beszallito');
+            $table->foreignId('beszallito')->references('id')->on('users');
             $table->timestamps();
         });
     }
