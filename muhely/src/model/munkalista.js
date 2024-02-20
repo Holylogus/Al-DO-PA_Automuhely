@@ -1,7 +1,7 @@
 export const lista = [
   {
     datum: "2023.10.29", //feladatok tábla
-    ugyfel: "Szlucska Dóra", //autók tábla
+    ugyfel: "Szlucska Dóra",
     munkalapszam: "123456798", // munkalapok tábla
     statusz: "aktív", // feladatok tábla (nincs statusz cella, csak a kezdési/befejezési idő alapján lehet következtetni)
     leiras: "adwdawdawdawd", //feladatok tábla

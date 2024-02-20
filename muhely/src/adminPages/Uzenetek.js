@@ -1,11 +1,67 @@
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Table from "react-bootstrap/Table";
 // import Col from "react-bootstrap/Col";
 
 export default function Uzenetek() {
   return (
     <>
-    <div><p>Szerkesztés alatt</p></div>
+    <Container style={{margin: "10em auto"}}>
+      <Table>
+      <thead>
+        <tr>
+          <th>Fejléc</th>
+          <th>Fejléc</th>
+          <th>Fejléc</th>
+          <th>Fejléc</th>
+          <th>Fejléc</th>
+          <th>Fejléc</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+        </tr>
+        <tr>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+        </tr>
+        <tr>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+        </tr>
+        <tr>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+        </tr>
+        <tr>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+          <td>Adat</td>
+        </tr>
+      </tbody>
+      </Table>
+    </Container>
+  
       {/* <Container fluid>
         <Row style={{backgroundColor: "#0000009e", color: "white"}}>
           <Col className="menu" sm={4} md={2} lg={2} style={{backgroundColor: "#0000003e"}}>
