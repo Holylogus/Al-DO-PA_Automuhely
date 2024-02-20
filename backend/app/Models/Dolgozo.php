@@ -9,7 +9,7 @@ class Dolgozo extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'adoszam';
+    protected $primaryKey = 'dolgozoAzonosito';
 
     public $incrementing = false;
 

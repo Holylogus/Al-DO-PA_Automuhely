@@ -11,7 +11,7 @@ class Munkalap extends Model
     protected $primaryKey = 'munkalapSzam';
     protected $fillable = [
         'auto',
-        'erkezesiIdo',
+        'munkafelvetelIdeje',
         'leiras',
         'ugyfel',
         'munkavezeto',
