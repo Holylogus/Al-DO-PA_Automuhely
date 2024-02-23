@@ -21,7 +21,7 @@ class MunkalapFactory extends Factory
     {
         return [
             'auto'=>fake()->randomElement(Auto::all()),
-            'erkezesiIdo'=>fake()->date('Y-m-d','now'),
+            'munkafelvetelIdeje'=>fake()->date('Y-m-d','now'),
             'leiras'=>fake()->sentence(10),
             'ugyfel'=>fake()->randomElement(User::all()),
             'munkavezeto' => function () {

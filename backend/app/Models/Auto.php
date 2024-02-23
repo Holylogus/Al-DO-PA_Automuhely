@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Auto extends Model
 {
     use HasFactory;
-    protected $primatyKey = 'autoAzonosito';
+    protected $primaryKey = 'autoAzonosito';
 
     protected $fillable = [
         'alvazszam',

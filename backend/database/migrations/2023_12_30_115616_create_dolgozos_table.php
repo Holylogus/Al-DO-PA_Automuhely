@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('dolgozos', function (Blueprint $table) {
             $table->id('dolgozoAzonosito');
-            $table->id("dolgozoAzonosito");
             $table->bigInteger('adoszam');
             $table->string('nev');
             $table->date('szuletesiIdo');
