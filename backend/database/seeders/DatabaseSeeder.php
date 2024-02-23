@@ -10,6 +10,7 @@ use App\Models\Auto;
 use App\Models\Dolgozo;
 use App\Models\Feladat;
 use App\Models\Munkalap;
+use App\Models\MunkalapTetel;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -25,7 +26,8 @@ class DatabaseSeeder extends Seeder
         Alkatresz::factory(30)->create();
         Feladat::factory(10)->create();
         Auto::factory(10)->create();
-        Munkalap::factory(3)->create();
+        Munkalap::factory(4)->create();
+        MunkalapTetel::factory(10)->create();
     }
 }
 

@@ -11,7 +11,6 @@ class Dolgozo extends Model
 
     protected $primaryKey = 'dolgozoAzonosito';
 
-    public $incrementing = false;
 
     protected $fillable = [
         'adoszam',

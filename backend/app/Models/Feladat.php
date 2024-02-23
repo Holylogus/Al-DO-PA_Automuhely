@@ -22,4 +22,9 @@ class Feladat extends Model
         'kuplunk javítás', 'kuplung csere', 'hűtő javítás', 'hűtő csere','akumulátor csere', 'vezérlés javítás','vezérlés csere',
         'kormánymű javítás','kormánymű csere',
     ];
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
 }
