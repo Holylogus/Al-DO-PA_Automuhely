@@ -20,7 +20,7 @@ class MunkalapFactory extends Factory
     public function definition(): array
     {
         return [
-            'kocsi'=>fake()->randomElement(Auto::all()),
+            'auto'=>fake()->randomElement(Auto::all()),
             'erkezesiIdo'=>fake()->date('Y-m-d','now'),
             'leiras'=>fake()->sentence(10),
             'ugyfel'=>fake()->randomElement(User::all()),

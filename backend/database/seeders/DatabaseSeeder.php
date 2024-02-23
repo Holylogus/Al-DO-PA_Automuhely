@@ -25,6 +25,6 @@ class DatabaseSeeder extends Seeder
         Alkatresz::factory(30)->create();
         Feladat::factory(10)->create();
         Auto::factory(10)->create();
-        Munkalap::factory(3)->create();}
+    }
 }
 

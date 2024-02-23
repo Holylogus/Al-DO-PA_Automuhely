@@ -3,6 +3,7 @@
 use App\Models\Dolgozo;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -13,6 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dolgozos', function (Blueprint $table) {
+            $table->id('dolgozoAzonosito');
             $table->id("dolgozoAzonosito");
             $table->bigInteger('adoszam');
             $table->string('nev');
@@ -25,6 +27,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::update('ALTER TABLE dolgozos AUTO_INCREMENT = 10');
 
         Dolgozo::create(
             [

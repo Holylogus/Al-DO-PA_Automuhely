@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('munkalaps', function (Blueprint $table) {
             $table->id('munkalapSzam');
-            $table->foreignId('kocsi')->references('autoAzonosito')->on('autos');
-            $table->date('erkezesiIdo');
+            $table->foreignId('auto')->references('autoAzonosito')->on('autos');
+            $table->date('munkafelvetelIdeje');
             $table->string('leiras')->nullable();
             $table->foreignId('ugyfel')->references('id')->on('users');
             $table->foreignId('munkavezeto')->references('dolgozoAzonosito')->on('dolgozos');
