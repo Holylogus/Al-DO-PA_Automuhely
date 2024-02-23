@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('munkafelvetelIdeje');
             $table->string('leiras')->nullable();
             $table->foreignId('ugyfel')->references('id')->on('users');
-            $table->foreignId('munkavezeto')->references('dolgozoAzonosito')->on('dolgozos');
+            $table->foreignId('munkavezeto')->references('id')->on('users');
             $table->boolean('kesz')->nullable();
             $table->integer('osszeg')->nullable();
             $table->date('elvitelIdeje')->nullable();

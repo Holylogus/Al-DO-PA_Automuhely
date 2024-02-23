@@ -13,10 +13,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('munkalap_tetels', function (Blueprint $table) {
-            $table->id('munkalapszam');
+            $table->foreignId('munkalapszam')->references('munkalapSzam')->on('munkalaps');
             $table->foreignId('feladat')->references('kod')->on('feladats');
-            $table->unique(['munkalapszam','feladat']);
-            $table->foreignId('szerelo')->references('dolgozoAzonosito')->on('dolgozos');
+            $table->primary(['munkalapszam','feladat']);
+            $table->foreignId('szerelo')->references('id')->on('users');
             $table->boolean('javCsere')->nullable();
             $table->foreignId('alkatresz')->references('azonosito')->on('alkatreszs');
             $table->integer('mennyiség')->nullable();

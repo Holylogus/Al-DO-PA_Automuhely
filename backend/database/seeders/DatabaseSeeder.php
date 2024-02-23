@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(10)->create();
-        Dolgozo::factory(5)->create();
         Alkatresz::factory(30)->create();
         Feladat::factory(10)->create();
         Auto::factory(10)->create();
