@@ -26,7 +26,7 @@ class MunkalapFactory extends Factory
             'ugyfel'=>fake()->randomElement(User::all()),
             'munkavezeto' => function () {
                 // Munkavezető kiválasztása, akinek a pozíciója 'vezetoSzerelo'
-                return Dolgozo::where('pozicio', 'vezetoSzerelo')->inRandomOrder()->first()->dolgozoAzonosito;
+                return User::where('jogosultsag', 'vezetoSzerelo')->inRandomOrder()->first()->id;
             },
             'kesz'=>fake()->boolean(),
             'osszeg'=>fake()->numberBetween(10000,500000),

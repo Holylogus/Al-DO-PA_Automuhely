@@ -6,6 +6,7 @@ use App\Models\Alkatresz;
 use App\Models\Dolgozo;
 use App\Models\Feladat;
 use App\Models\Munkalap;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -21,9 +22,10 @@ class MunkalapTetelFactory extends Factory
     public function definition(): array
     {
         return [
+            'munkalapszam'=>fake()->randomElement(Munkalap::all()),
             'feladat'=>fake()->randomElement(Feladat::all()),
             'szerelo'=>function(){
-                return Dolgozo::where('pozicio', 'szerelo')->inRandomOrder()->first()->dolgozoAzonosito;
+                return User::where('jogosultsag', 'szerelo')->inRandomOrder()->first()->id;
             },
             'javCsere'=>fake()->boolean(),
             'alkatresz'=>fake()->randomElement(Alkatresz::all()),

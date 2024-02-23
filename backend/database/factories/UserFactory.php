@@ -27,7 +27,7 @@ class UserFactory extends Factory
         return [
             'nev' => fake('HU_hu')->name(),
             'szuletesiIdo' => fake()->date(),
-            'lakcím' => fake()->address(),
+            'lakcim' => fake()->address(),
             'telefonszam' => fake()->phoneNumber(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
