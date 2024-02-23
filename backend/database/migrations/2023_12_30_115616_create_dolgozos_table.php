@@ -13,6 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dolgozos', function (Blueprint $table) {
+            $table->id("dolgozoAzonosito");
             $table->bigInteger('adoszam');
             $table->string('nev');
             $table->date('szuletesiIdo');
