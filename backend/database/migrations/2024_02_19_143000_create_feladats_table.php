@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('munkalaps', function (Blueprint $table) {
-            $table->id('rendeles_szam');
-            $table->date('kelt');
-            $table->bigInteger('osszeg');
+        Schema::create('feladats', function (Blueprint $table) {
+            $table->id('kod');
+            $table->string('megnevezes');
+            $table->integer('munkadij');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('munkalaps');
+        Schema::dropIfExists('feladats');
     }
 };

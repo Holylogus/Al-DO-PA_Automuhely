@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Alkatresz;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,7 +21,7 @@ class AlkatreszFactory extends Factory
         return [
             'megnevezes' => fake()->randomElement(Alkatresz::$alkatreszek),
             'listaar' => rand(8999, 600000),
-            'beszallito' => fake('hu_HU')->company(),
+            'beszallito' => fake()->randomElement(User::all()),
         ];
     }
 }

@@ -19,11 +19,14 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'nev',
+        'szuletesiIdo',
+        'lakcim',
+        'telefonszam',
         'email',
-        'password',
-        'jogosultsag'
+        'jogosultsag',
+        'password'
     ];
-
+    public static $poziciok = ['admin','vezetoSzerelo', 'szerelo', 'recepcios','felhasznalo','beszallito'];
     /**
      * The attributes that should be hidden for serialization.
      *

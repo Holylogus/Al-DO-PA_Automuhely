@@ -9,12 +9,11 @@ class Alkatresz extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'cikkszam';
+    protected $primaryKey = 'azonosito';
 
     public $incrementing = false;
 
     protected $fillable = [
-        'cikkszam',
         'megnevezes',
         'listaar',
         'beszallito'

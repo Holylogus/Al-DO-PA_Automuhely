@@ -8,12 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Munkalap extends Model
 {
     use HasFactory;
-
-    protected $primaryKey = 'rendeles_szam';
-
+    protected $primaryKey = 'munkalapSzam';
     protected $fillable = [
-        'kelt',
+        'auto',
+        'munkafelvetelIdeje',
+        'leiras',
+        'ugyfel',
+        'munkavezeto',
+        'kesz',
         'osszeg',
+        'elvitelIdeje'
     ];
 
     protected $hidden = [
