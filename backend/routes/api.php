@@ -26,6 +26,7 @@ Route::middleware('auth:basic')->get('/user', function (Request $request) {
 
 require __DIR__ . '/auth.php';
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'login']);
+Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout']);
 
 //csak az admin éri el:
 Route::middleware('auth:sanctum')->group(function () {
