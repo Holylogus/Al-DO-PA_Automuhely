@@ -25,7 +25,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::update('ALTER TABLE munkalaps AUTO_INCREMENT = 100');
+        DB::update('ALTER TABLE munkalaps AUTO_INCREMENT = 1000');
 
     }
 
