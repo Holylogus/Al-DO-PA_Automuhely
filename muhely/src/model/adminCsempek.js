@@ -1,7 +1,7 @@
 export const lista = [
   {
-    link: "/szamla",
-    szoveg: "Számlák",
+    link: "/munkak",
+    szoveg: "Munkák",
     ikon: "fa-solid fa-file-invoice-dollar",
   },
   {
