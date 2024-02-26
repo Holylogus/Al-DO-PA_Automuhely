@@ -3,9 +3,9 @@
 namespace Database\Factories;
 
 use App\Models\Alkatresz;
-use App\Models\Dolgozo;
 use App\Models\Feladat;
 use App\Models\Munkalap;
+use App\Models\MunkalapTetel;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -21,24 +21,39 @@ class MunkalapTetelFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'munkalapszam'=>fake()->randomElement(Munkalap::all()),
-            'feladat'=>fake()->randomElement(Feladat::all()),
-            'szerelo'=>function(){
+
+        do {
+            $munkalapszam = fake()->randomElement(Munkalap::pluck('munkalapSzam'));
+            $feladat = fake()->randomElement(Feladat::pluck('kod'));
+        } while (MunkalapTetel::where('munkalapszam', $munkalapszam)->where('feladat', $feladat)->exists());
+
+        $javCsere = fake()->boolean();
+
+        $alkatreszRelatedFields = $javCsere ? [
+            'alkatresz' => fake()->randomElement(Alkatresz::pluck('azonosito')),
+            'mennyiség' => fake()->numberBetween(1, 5),
+            'alkatreszAra' => fake()->numberBetween(10000, 120000),
+            'alkatreszRendelesiIdo' => fake()->date(),
+            'alkatreszErkezesiIdo' => fake()->date(),
+        ] : [
+            'alkatresz' => null,
+            'mennyiség' => null,
+            'alkatreszAra' => null,
+            'alkatreszRendelesiIdo' => null,
+            'alkatreszErkezesiIdo' => null,
+        ];
+
+        return array_merge([
+            'munkalapSzam' => $munkalapszam,
+            'feladat' => $feladat,
+            'szerelo' => function () {
                 return User::where('jogosultsag', 'szerelo')->inRandomOrder()->first()->id;
             },
-            'javCsere'=>fake()->boolean(),
-            'alkatresz'=>fake()->randomElement(Alkatresz::all()),
-            'mennyiség'=>fake()->numberBetween(0,0),
-            'alkatreszAra'=>fake()->numberBetween(10000,120000),
-            'alkatreszRendelesiIdo'=>fake()->date(),
-            'alkatreszErkezesiIdo'=>fake()->date(),
-            'munkaKezdesiIdo'=>fake()->date(),
-            'munkaBefejezesiIdo'=>fake()->date()
-
-
-
-
-        ];
+            'javCsere' => $javCsere,
+            'munkaKezdesiIdo' => fake()->date(),
+            'munkaBefejezesiIdo' => fake()->date()
+        ],
+        $alkatreszRelatedFields
+        );
     }
 }

@@ -13,12 +13,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('munkalap_tetels', function (Blueprint $table) {
-            $table->foreignId('munkalapszam')->references('munkalapSzam')->on('munkalaps');
-            $table->foreignId('feladat')->references('kod')->on('feladats');
-            $table->primary(['munkalapszam','feladat']);
-            $table->foreignId('szerelo')->references('id')->on('users');
+            $table->foreignId('munkalapszam')->constrained('munkalaps','munkalapszam')->cascadeOnDelete(); 
+            $table->foreignId('feladat')->constrained('feladats','kod')->cascadeOnDelete(); 
+            $table->primary(['munkalapszam','feladat']); 
+            $table->foreignId('szerelo')->nullable()->constrained('users','id')->nullOnDelete();
             $table->boolean('javCsere')->nullable();
-            $table->foreignId('alkatresz')->references('azonosito')->on('alkatreszs');
+            $table->foreignId('alkatresz')->nullable()->constrained('alkatreszs','azonosito')->nullOnDelete();
             $table->integer('mennyiség')->nullable();
             $table->integer('alkatreszAra')->nullable();
             $table->date('alkatreszRendelesiIdo')->nullable();
