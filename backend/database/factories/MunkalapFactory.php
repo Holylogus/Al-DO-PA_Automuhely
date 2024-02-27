@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use App\Models\Auto;
-use App\Models\Dolgozo;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,19 +18,30 @@ class MunkalapFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'auto'=>fake()->randomElement(Auto::all()),
-            'munkafelvetelIdeje'=>fake()->date('Y-m-d','now'),
-            'leiras'=>fake()->sentence(10),
-            'ugyfel'=>fake()->randomElement(User::all()),
+        $munkaFelvetelIdeje = fake()->dateTimeBetween('2022-01-01','now');
+
+        $elvitelIdeje = fake()->dateTimeBetween($munkaFelvetelIdeje,'now');
+
+        $kesz = fake()->boolean();
+
+        $keszRelatedFields = $kesz ? [
+            'elvitelIdeje' => $elvitelIdeje,
+            'osszeg' => fake()->numberBetween(10000,500000)
+        ] : [
+            'elvitelIdeje' =>null,
+            'osszeg'=>null
+        ];
+
+        return array_merge([
+            'auto'=>fake()->randomElement(Auto::pluck('autoAzonosito')),
+            'munkafelvetelIdeje'=>$munkaFelvetelIdeje,
+            'leiras'=>fake('HU_hu')->sentence(10),
+            'ugyfel'=>fake()->randomElement(User::pluck('id')),
             'munkavezeto' => function () {
                 // Munkavezető kiválasztása, akinek a pozíciója 'vezetoSzerelo'
                 return User::where('jogosultsag', 'vezetoSzerelo')->inRandomOrder()->first()->id;
             },
-            'kesz'=>fake()->boolean(),
-            'osszeg'=>fake()->numberBetween(10000,500000),
-            'elvitelIdeje'=>fake()->date('Y-m-d','now')
-
-        ];
+            'kesz'=>$kesz,
+        ], $keszRelatedFields);
     }
 }

@@ -12,6 +12,7 @@ use App\Models\Munkalap;
 use App\Models\MunkalapTetel;
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,12 +21,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
-        Alkatresz::factory(10)->create();
-        Feladat::factory(15)->create();
-        Auto::factory(10)->create();
-        Munkalap::factory(5)->create();
-        MunkalapTetel::factory(8)->create();
+        $this->tryToSeed(User::class, 10);
+        $this->tryToSeed(Alkatresz::class, 10);
+        $this->tryToSeed(Feladat::class, 15);
+        $this->tryToSeed(Auto::class, 10);
+        $this->tryToSeed(Munkalap::class, 10);
+        $this->tryToSeed(MunkalapTetel::class, 5);
+    }
+
+
+    private function tryToSeed(string $modelClass, int $timesForCreate): void
+    {
+        DB::beginTransaction();
+        try {
+            $modelClass::factory($timesForCreate)->create();
+            DB::commit();
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            echo "Failed to seed {$modelClass}: {$th->getMessage()}\n";
+        }
     }
 }
 
