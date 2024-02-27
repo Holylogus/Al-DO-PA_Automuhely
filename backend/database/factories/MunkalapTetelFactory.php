@@ -33,7 +33,7 @@ class MunkalapTetelFactory extends Factory
             'alkatresz' => fake()->randomElement(Alkatresz::pluck('azonosito')),
             'mennyiség' => fake()->numberBetween(1, 5),
             'alkatreszAra' => fake()->numberBetween(10000, 120000),
-            'alkatreszRendelesiIdo' => fake()->date(),
+            'alkatreszRendelesiIdo' => fake()->date('Y-m-d'),
             'alkatreszErkezesiIdo' => fake()->date(),
         ] : [
             'alkatresz' => null,

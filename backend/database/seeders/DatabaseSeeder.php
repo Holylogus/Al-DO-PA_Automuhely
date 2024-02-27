@@ -7,7 +7,6 @@ namespace Database\Seeders;
 
 use App\Models\Alkatresz;
 use App\Models\Auto;
-use App\Models\Dolgozo;
 use App\Models\Feladat;
 use App\Models\Munkalap;
 use App\Models\MunkalapTetel;
@@ -23,7 +22,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         Alkatresz::factory(30)->create();
-        Feladat::factory(10)->create();
+        Feladat::factory(15)->create();
         Auto::factory(10)->create();
         Munkalap::factory(5)->create();
         MunkalapTetel::factory(8)->create();
