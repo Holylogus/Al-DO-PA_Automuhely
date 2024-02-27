@@ -29,6 +29,9 @@ class Alkatresz extends Model
         'nyári gumi', 'téli gumi', 'sebességváltó', 'klímaberendezés', 'zárrendszer', 'üzemanyag-szállító rendszer',
         'tengelykapcsoló', 'vonóhorog', 'kipufogó', 'szélvédő', 'elülső ablak', 'hátulsó ablak', 'fényszóró izzó',
         'jelzőizzó', 'led', 'műszerfal világítás', 'nappali menetfény', 'autó ülés', 'keréktárcsa', 'csapágy',
-        'szivargyújtó', 'rugó'
+        'szivargyújtó', 'rugó', 'olajszűrő', 'légzsák', 'indítómotor', 'akkumulátor', 'kuplung', 'féktárcsa',
+        'futómű', 'hűtőrács', 'külső visszapillantó tükör', 'ablaktörlő lapát', 'kormánymű', 'lengéscsillapító',
+        'hűtőventilátor', 'olajpumpa', 'vízpumpa', 'ékszíj', 'vezérműszíj', 'turbófeltöltő', 'katalizátor',
+        'üzemanyagtank', 'légszűrő', 'kormánykerék', 'kézifék', 'ajtózár', 'kuplungtárcsa'
     ];
 }
