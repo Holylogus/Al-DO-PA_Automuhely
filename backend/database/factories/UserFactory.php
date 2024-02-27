@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -27,8 +27,8 @@ class UserFactory extends Factory
         return [
             'nev' => fake('HU_hu')->name(),
             'szuletesiIdo' => fake()->date(),
-            'lakcim' => fake()->address(),
-            'telefonszam' => fake()->phoneNumber(),
+            'lakcim' => fake('HU_hu')->address(),
+            'telefonszam' => fake('HU-hu')->phoneNumber(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'jogosultsag' => fake()->randomElement(['felhasznalo','beszallito']),

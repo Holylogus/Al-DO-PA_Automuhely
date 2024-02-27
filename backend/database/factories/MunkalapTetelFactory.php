@@ -44,7 +44,7 @@ class MunkalapTetelFactory extends Factory
         ];
 
         return array_merge([
-            'munkalapSzam' => $munkalapszam,
+            'munkalapszam' => $munkalapszam,
             'feladat' => $feladat,
             'szerelo' => function () {
                 return User::where('jogosultsag', 'szerelo')->inRandomOrder()->first()->id;
