@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('alkatreszs', function (Blueprint $table) {
             $table->id('azonosito');
-            $table->string('megnevezes');
-            $table->bigInteger('listaar');
+            $table->string('megnevezes')->unique();
             $table->foreignId('beszallito')->references('id')->on('users');
             $table->timestamps();
         });

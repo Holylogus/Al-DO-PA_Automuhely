@@ -18,10 +18,15 @@ class AlkatreszFactory extends Factory
      */
     public function definition(): array
     {
+        do {
+            $megnevezes = fake()->randomElement(Alkatresz::$alkatreszek);
+        } while (Alkatresz::where('megnevezes', $megnevezes)->exists());
+
         return [
-            'megnevezes' => fake()->randomElement(Alkatresz::$alkatreszek),
-            'listaar' => rand(8999, 600000),
-            'beszallito' => fake()->randomElement(User::all()),
+            'megnevezes' => $megnevezes,
+            'beszallito' => function () {
+                return User::where('jogosultsag', 'beszallito')->inRandomOrder()->first()->id;
+            },
         ];
     }
 }

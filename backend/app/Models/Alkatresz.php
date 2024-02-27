@@ -15,7 +15,6 @@ class Alkatresz extends Model
 
     protected $fillable = [
         'megnevezes',
-        'listaar',
         'beszallito'
     ];
 
