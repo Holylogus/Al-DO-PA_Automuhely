@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AutoController;
+use App\Http\Controllers\MunkalapController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -34,4 +35,11 @@ Route::get('/auto{id}',[AutoController::class, 'show']);
 Route::post('/auto',[AutoController::class, 'store']);
 Route::post('/auto{id}',[AutoController::class, 'update']);
 Route::delete('/auto{id}',[AutoController::class, 'destroy']);
+
+//Munkalap alap útvonalak
+Route::get('/munkalap',[MunkalapController::class, 'index']);
+Route::get('/munkalap{id}',[MunkalapController::class, 'show']);
+Route::post('/munkalap',[MunkalapController::class, 'store']);
+Route::post('/munkalap{id}',[MunkalapController::class, 'update']);
+Route::delete('/munkalap{id}',[MunkalapController::class, 'destroy']);
 
