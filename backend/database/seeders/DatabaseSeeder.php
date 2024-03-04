@@ -22,6 +22,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // User::factory()->create(10);
+        // Alkatresz::factory()->create(10);
+        // Feladat::factory()->create(10);
+        // Auto::factory()->create(10);
+        // Munkalap::factory()->create(10);
+        // Munkalap::factory()->create(10);
+
+
         $this->tryToSeed(User::class, 10);
         $this->tryToSeed(Alkatresz::class, 10);
         $this->tryToSeed(Feladat::class, 15);
@@ -53,7 +61,7 @@ class DatabaseSeeder extends Seeder
                 $tetelSzam = rand(1, 5); // Belső ciklus mely létrehoz 1-5 munkalapTételt, munkalaponként
                 for ($i = 0; $i < $tetelSzam; $i++) {
                     $munkalapTetelData = MunkalapTetel::factory()->make([
-                        'munkalapSzam' => $munkalap->id,
+                        // 'munkalapSzam' => $munkalap->id,
                     ])->toArray(); //Munkalaptétel létrehozása, de még nem küldjük az ab-be
 
                     $munkafelvetelIdeje = Carbon::parse($munkalap->munkafelvetelIdeje);

@@ -18,10 +18,23 @@ class AlkatreszFactory extends Factory
      */
     public function definition(): array
     {
-        do {
-            $megnevezes = fake()->randomElement(Alkatresz::$alkatreszek);
-        } while (Alkatresz::where('megnevezes', $megnevezes)->exists());
+        // do {
+        //     $megnevezes = fake()->randomElement(Alkatresz::$alkatreszek);
+        // } while (Alkatresz::where('megnevezes', $megnevezes)->exists());
 
+        if (!empty($letezoMegnevezesek)) {
+            $elérhetőAlkatreszek = array_diff(Alkatresz::$alkatreszek, $letezoMegnevezesek);
+
+            // Ha már minden alkatrész szerepel az adatbázisban
+            if (empty($elérhetőAlkatreszek)) {
+                return [];
+            }
+
+            $megnevezes = fake()->randomElement($elérhetőAlkatreszek);
+        } else {
+            // Ha még nincsenek alkatrészek az adatbázisban
+            $megnevezes = fake()->randomElement(Alkatresz::$alkatreszek);
+        }
         return [
             'megnevezes' => $megnevezes,
             'beszallito' => function () {
